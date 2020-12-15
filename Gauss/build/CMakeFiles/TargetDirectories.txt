@@ -1,0 +1,6 @@
+/home/jcwang/work/digNS/code/Gauss/build/CMakeFiles/rebuild_cache.dir
+/home/jcwang/work/digNS/code/Gauss/build/CMakeFiles/edit_cache.dir
+/home/jcwang/work/digNS/code/Gauss/build/CMakeFiles/GaussSolver.dir
+/home/jcwang/work/digNS/code/Gauss/build/src/CMakeFiles/rebuild_cache.dir
+/home/jcwang/work/digNS/code/Gauss/build/src/CMakeFiles/edit_cache.dir
+/home/jcwang/work/digNS/code/Gauss/build/src/CMakeFiles/LIB_SRCS.dir

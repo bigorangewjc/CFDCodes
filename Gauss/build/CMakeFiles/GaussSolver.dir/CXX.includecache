@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/GaussSolver.h
+
+../include/LUSolver.h
+string
+-
+
+../include/Matrix.h
+
+../include/Vector.h
+
+/home/jcwang/work/digNS/code/Gauss/main.cpp
+iostream
+-
+GaussSolver.h
+/home/jcwang/work/digNS/code/Gauss/GaussSolver.h
+LUSolver.h
+/home/jcwang/work/digNS/code/Gauss/LUSolver.h
+Matrix.h
+/home/jcwang/work/digNS/code/Gauss/Matrix.h
+Vector.h
+/home/jcwang/work/digNS/code/Gauss/Vector.h
+

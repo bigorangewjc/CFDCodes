@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "iostream": "cpp"
+    },
+    "clang.cxxflags": [
+        "-I${workspaceRoot}/include"
+    ]
+}
