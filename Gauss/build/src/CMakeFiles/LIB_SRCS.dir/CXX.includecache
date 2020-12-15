@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+../include/GaussSolver.h
+
 ../include/LUSolver.h
 string
 -
@@ -14,13 +16,35 @@ string
 
 ../include/Vector.h
 
-/home/jcwang/work/digNS/code/Gauss/src/LUSolver.cpp
-LUSolver.h
-/home/jcwang/work/digNS/code/Gauss/src/LUSolver.h
+/home/jcwang/work/Github/CFDCodes/Gauss/src/GaussSolver.cpp
+GaussSolver.h
+/home/jcwang/work/Github/CFDCodes/Gauss/src/GaussSolver.h
 iostream
 -
 Matrix.h
-/home/jcwang/work/digNS/code/Gauss/src/Matrix.h
+/home/jcwang/work/Github/CFDCodes/Gauss/src/Matrix.h
 Vector.h
-/home/jcwang/work/digNS/code/Gauss/src/Vector.h
+/home/jcwang/work/Github/CFDCodes/Gauss/src/Vector.h
+
+/home/jcwang/work/Github/CFDCodes/Gauss/src/LUSolver.cpp
+LUSolver.h
+/home/jcwang/work/Github/CFDCodes/Gauss/src/LUSolver.h
+iostream
+-
+Matrix.h
+/home/jcwang/work/Github/CFDCodes/Gauss/src/Matrix.h
+Vector.h
+/home/jcwang/work/Github/CFDCodes/Gauss/src/Vector.h
+
+/home/jcwang/work/Github/CFDCodes/Gauss/src/Matrix.cpp
+Matrix.h
+/home/jcwang/work/Github/CFDCodes/Gauss/src/Matrix.h
+iostream
+-
+
+/home/jcwang/work/Github/CFDCodes/Gauss/src/Vector.cpp
+Vector.h
+/home/jcwang/work/Github/CFDCodes/Gauss/src/Vector.h
+iostream
+-
 

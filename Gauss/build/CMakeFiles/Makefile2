@@ -64,10 +64,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jcwang/work/digNS/code/Gauss
+CMAKE_SOURCE_DIR = /home/jcwang/work/Github/CFDCodes/Gauss
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jcwang/work/digNS/code/Gauss/build
+CMAKE_BINARY_DIR = /home/jcwang/work/Github/CFDCodes/Gauss/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -114,14 +114,14 @@ src/clean: src/CMakeFiles/LIB_SRCS.dir/clean
 CMakeFiles/GaussSolver.dir/all: src/CMakeFiles/LIB_SRCS.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaussSolver.dir/build.make CMakeFiles/GaussSolver.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaussSolver.dir/build.make CMakeFiles/GaussSolver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jcwang/work/digNS/code/Gauss/build/CMakeFiles --progress-num=1,2 "Built target GaussSolver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jcwang/work/Github/CFDCodes/Gauss/build/CMakeFiles --progress-num=1,2 "Built target GaussSolver"
 .PHONY : CMakeFiles/GaussSolver.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/GaussSolver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jcwang/work/digNS/code/Gauss/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jcwang/work/Github/CFDCodes/Gauss/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/GaussSolver.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jcwang/work/digNS/code/Gauss/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jcwang/work/Github/CFDCodes/Gauss/build/CMakeFiles 0
 .PHONY : CMakeFiles/GaussSolver.dir/rule
 
 # Convenience name for target.
@@ -141,14 +141,14 @@ CMakeFiles/GaussSolver.dir/clean:
 src/CMakeFiles/LIB_SRCS.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/LIB_SRCS.dir/build.make src/CMakeFiles/LIB_SRCS.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/LIB_SRCS.dir/build.make src/CMakeFiles/LIB_SRCS.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jcwang/work/digNS/code/Gauss/build/CMakeFiles --progress-num=3,4,5,6,7 "Built target LIB_SRCS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jcwang/work/Github/CFDCodes/Gauss/build/CMakeFiles --progress-num=3,4,5,6,7 "Built target LIB_SRCS"
 .PHONY : src/CMakeFiles/LIB_SRCS.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/LIB_SRCS.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jcwang/work/digNS/code/Gauss/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jcwang/work/Github/CFDCodes/Gauss/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/LIB_SRCS.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jcwang/work/digNS/code/Gauss/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jcwang/work/Github/CFDCodes/Gauss/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/LIB_SRCS.dir/rule
 
 # Convenience name for target.

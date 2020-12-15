@@ -16,15 +16,15 @@ string
 
 ../include/Vector.h
 
-/home/jcwang/work/digNS/code/Gauss/main.cpp
+/home/jcwang/work/Github/CFDCodes/Gauss/main.cpp
 iostream
 -
 GaussSolver.h
-/home/jcwang/work/digNS/code/Gauss/GaussSolver.h
+/home/jcwang/work/Github/CFDCodes/Gauss/GaussSolver.h
 LUSolver.h
-/home/jcwang/work/digNS/code/Gauss/LUSolver.h
+/home/jcwang/work/Github/CFDCodes/Gauss/LUSolver.h
 Matrix.h
-/home/jcwang/work/digNS/code/Gauss/Matrix.h
+/home/jcwang/work/Github/CFDCodes/Gauss/Matrix.h
 Vector.h
-/home/jcwang/work/digNS/code/Gauss/Vector.h
+/home/jcwang/work/Github/CFDCodes/Gauss/Vector.h
 

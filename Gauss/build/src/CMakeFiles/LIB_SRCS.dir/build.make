@@ -63,10 +63,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jcwang/work/digNS/code/Gauss
+CMAKE_SOURCE_DIR = /home/jcwang/work/Github/CFDCodes/Gauss
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jcwang/work/digNS/code/Gauss/build
+CMAKE_BINARY_DIR = /home/jcwang/work/Github/CFDCodes/Gauss/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/LIB_SRCS.dir/depend.make
@@ -79,55 +79,55 @@ include src/CMakeFiles/LIB_SRCS.dir/flags.make
 
 src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o: src/CMakeFiles/LIB_SRCS.dir/flags.make
 src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o: ../src/GaussSolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/digNS/code/Gauss/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o"
-	cd /home/jcwang/work/digNS/code/Gauss/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o -c /home/jcwang/work/digNS/code/Gauss/src/GaussSolver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/Gauss/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o"
+	cd /home/jcwang/work/Github/CFDCodes/Gauss/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o -c /home/jcwang/work/Github/CFDCodes/Gauss/src/GaussSolver.cpp
 
 src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.i"
-	cd /home/jcwang/work/digNS/code/Gauss/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jcwang/work/digNS/code/Gauss/src/GaussSolver.cpp > CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.i
+	cd /home/jcwang/work/Github/CFDCodes/Gauss/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jcwang/work/Github/CFDCodes/Gauss/src/GaussSolver.cpp > CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.i
 
 src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.s"
-	cd /home/jcwang/work/digNS/code/Gauss/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jcwang/work/digNS/code/Gauss/src/GaussSolver.cpp -o CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.s
+	cd /home/jcwang/work/Github/CFDCodes/Gauss/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jcwang/work/Github/CFDCodes/Gauss/src/GaussSolver.cpp -o CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.s
 
 src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o: src/CMakeFiles/LIB_SRCS.dir/flags.make
 src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o: ../src/LUSolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/digNS/code/Gauss/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o"
-	cd /home/jcwang/work/digNS/code/Gauss/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o -c /home/jcwang/work/digNS/code/Gauss/src/LUSolver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/Gauss/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o"
+	cd /home/jcwang/work/Github/CFDCodes/Gauss/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o -c /home/jcwang/work/Github/CFDCodes/Gauss/src/LUSolver.cpp
 
 src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.i"
-	cd /home/jcwang/work/digNS/code/Gauss/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jcwang/work/digNS/code/Gauss/src/LUSolver.cpp > CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.i
+	cd /home/jcwang/work/Github/CFDCodes/Gauss/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jcwang/work/Github/CFDCodes/Gauss/src/LUSolver.cpp > CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.i
 
 src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.s"
-	cd /home/jcwang/work/digNS/code/Gauss/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jcwang/work/digNS/code/Gauss/src/LUSolver.cpp -o CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.s
+	cd /home/jcwang/work/Github/CFDCodes/Gauss/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jcwang/work/Github/CFDCodes/Gauss/src/LUSolver.cpp -o CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.s
 
 src/CMakeFiles/LIB_SRCS.dir/Matrix.cpp.o: src/CMakeFiles/LIB_SRCS.dir/flags.make
 src/CMakeFiles/LIB_SRCS.dir/Matrix.cpp.o: ../src/Matrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/digNS/code/Gauss/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/Matrix.cpp.o"
-	cd /home/jcwang/work/digNS/code/Gauss/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LIB_SRCS.dir/Matrix.cpp.o -c /home/jcwang/work/digNS/code/Gauss/src/Matrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/Gauss/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/Matrix.cpp.o"
+	cd /home/jcwang/work/Github/CFDCodes/Gauss/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LIB_SRCS.dir/Matrix.cpp.o -c /home/jcwang/work/Github/CFDCodes/Gauss/src/Matrix.cpp
 
 src/CMakeFiles/LIB_SRCS.dir/Matrix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LIB_SRCS.dir/Matrix.cpp.i"
-	cd /home/jcwang/work/digNS/code/Gauss/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jcwang/work/digNS/code/Gauss/src/Matrix.cpp > CMakeFiles/LIB_SRCS.dir/Matrix.cpp.i
+	cd /home/jcwang/work/Github/CFDCodes/Gauss/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jcwang/work/Github/CFDCodes/Gauss/src/Matrix.cpp > CMakeFiles/LIB_SRCS.dir/Matrix.cpp.i
 
 src/CMakeFiles/LIB_SRCS.dir/Matrix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LIB_SRCS.dir/Matrix.cpp.s"
-	cd /home/jcwang/work/digNS/code/Gauss/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jcwang/work/digNS/code/Gauss/src/Matrix.cpp -o CMakeFiles/LIB_SRCS.dir/Matrix.cpp.s
+	cd /home/jcwang/work/Github/CFDCodes/Gauss/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jcwang/work/Github/CFDCodes/Gauss/src/Matrix.cpp -o CMakeFiles/LIB_SRCS.dir/Matrix.cpp.s
 
 src/CMakeFiles/LIB_SRCS.dir/Vector.cpp.o: src/CMakeFiles/LIB_SRCS.dir/flags.make
 src/CMakeFiles/LIB_SRCS.dir/Vector.cpp.o: ../src/Vector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/digNS/code/Gauss/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/Vector.cpp.o"
-	cd /home/jcwang/work/digNS/code/Gauss/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LIB_SRCS.dir/Vector.cpp.o -c /home/jcwang/work/digNS/code/Gauss/src/Vector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/Gauss/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/Vector.cpp.o"
+	cd /home/jcwang/work/Github/CFDCodes/Gauss/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LIB_SRCS.dir/Vector.cpp.o -c /home/jcwang/work/Github/CFDCodes/Gauss/src/Vector.cpp
 
 src/CMakeFiles/LIB_SRCS.dir/Vector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LIB_SRCS.dir/Vector.cpp.i"
-	cd /home/jcwang/work/digNS/code/Gauss/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jcwang/work/digNS/code/Gauss/src/Vector.cpp > CMakeFiles/LIB_SRCS.dir/Vector.cpp.i
+	cd /home/jcwang/work/Github/CFDCodes/Gauss/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jcwang/work/Github/CFDCodes/Gauss/src/Vector.cpp > CMakeFiles/LIB_SRCS.dir/Vector.cpp.i
 
 src/CMakeFiles/LIB_SRCS.dir/Vector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LIB_SRCS.dir/Vector.cpp.s"
-	cd /home/jcwang/work/digNS/code/Gauss/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jcwang/work/digNS/code/Gauss/src/Vector.cpp -o CMakeFiles/LIB_SRCS.dir/Vector.cpp.s
+	cd /home/jcwang/work/Github/CFDCodes/Gauss/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jcwang/work/Github/CFDCodes/Gauss/src/Vector.cpp -o CMakeFiles/LIB_SRCS.dir/Vector.cpp.s
 
 # Object files for target LIB_SRCS
 LIB_SRCS_OBJECTS = \
@@ -145,9 +145,9 @@ src/libLIB_SRCS.a: src/CMakeFiles/LIB_SRCS.dir/Matrix.cpp.o
 src/libLIB_SRCS.a: src/CMakeFiles/LIB_SRCS.dir/Vector.cpp.o
 src/libLIB_SRCS.a: src/CMakeFiles/LIB_SRCS.dir/build.make
 src/libLIB_SRCS.a: src/CMakeFiles/LIB_SRCS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jcwang/work/digNS/code/Gauss/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libLIB_SRCS.a"
-	cd /home/jcwang/work/digNS/code/Gauss/build/src && $(CMAKE_COMMAND) -P CMakeFiles/LIB_SRCS.dir/cmake_clean_target.cmake
-	cd /home/jcwang/work/digNS/code/Gauss/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LIB_SRCS.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jcwang/work/Github/CFDCodes/Gauss/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libLIB_SRCS.a"
+	cd /home/jcwang/work/Github/CFDCodes/Gauss/build/src && $(CMAKE_COMMAND) -P CMakeFiles/LIB_SRCS.dir/cmake_clean_target.cmake
+	cd /home/jcwang/work/Github/CFDCodes/Gauss/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LIB_SRCS.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/LIB_SRCS.dir/build: src/libLIB_SRCS.a
@@ -155,10 +155,10 @@ src/CMakeFiles/LIB_SRCS.dir/build: src/libLIB_SRCS.a
 .PHONY : src/CMakeFiles/LIB_SRCS.dir/build
 
 src/CMakeFiles/LIB_SRCS.dir/clean:
-	cd /home/jcwang/work/digNS/code/Gauss/build/src && $(CMAKE_COMMAND) -P CMakeFiles/LIB_SRCS.dir/cmake_clean.cmake
+	cd /home/jcwang/work/Github/CFDCodes/Gauss/build/src && $(CMAKE_COMMAND) -P CMakeFiles/LIB_SRCS.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/LIB_SRCS.dir/clean
 
 src/CMakeFiles/LIB_SRCS.dir/depend:
-	cd /home/jcwang/work/digNS/code/Gauss/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jcwang/work/digNS/code/Gauss /home/jcwang/work/digNS/code/Gauss/src /home/jcwang/work/digNS/code/Gauss/build /home/jcwang/work/digNS/code/Gauss/build/src /home/jcwang/work/digNS/code/Gauss/build/src/CMakeFiles/LIB_SRCS.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jcwang/work/Github/CFDCodes/Gauss/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jcwang/work/Github/CFDCodes/Gauss /home/jcwang/work/Github/CFDCodes/Gauss/src /home/jcwang/work/Github/CFDCodes/Gauss/build /home/jcwang/work/Github/CFDCodes/Gauss/build/src /home/jcwang/work/Github/CFDCodes/Gauss/build/src/CMakeFiles/LIB_SRCS.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/LIB_SRCS.dir/depend
 

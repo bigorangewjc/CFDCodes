@@ -1,27 +1,27 @@
 [
 {
-  "directory": "/home/jcwang/work/digNS/code/Gauss/build",
-  "command": "/usr/bin/g++   -I/home/jcwang/work/digNS/code/Gauss/include  -g   -o CMakeFiles/GaussSolver.dir/main.cpp.o -c /home/jcwang/work/digNS/code/Gauss/main.cpp",
-  "file": "/home/jcwang/work/digNS/code/Gauss/main.cpp"
+  "directory": "/home/jcwang/work/Github/CFDCodes/Gauss/build",
+  "command": "/usr/bin/g++   -I/home/jcwang/work/Github/CFDCodes/Gauss/include  -g   -o CMakeFiles/GaussSolver.dir/main.cpp.o -c /home/jcwang/work/Github/CFDCodes/Gauss/main.cpp",
+  "file": "/home/jcwang/work/Github/CFDCodes/Gauss/main.cpp"
 },
 {
-  "directory": "/home/jcwang/work/digNS/code/Gauss/build/src",
-  "command": "/usr/bin/g++   -I/home/jcwang/work/digNS/code/Gauss/include  -g   -o CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o -c /home/jcwang/work/digNS/code/Gauss/src/GaussSolver.cpp",
-  "file": "/home/jcwang/work/digNS/code/Gauss/src/GaussSolver.cpp"
+  "directory": "/home/jcwang/work/Github/CFDCodes/Gauss/build/src",
+  "command": "/usr/bin/g++   -I/home/jcwang/work/Github/CFDCodes/Gauss/include  -g   -o CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o -c /home/jcwang/work/Github/CFDCodes/Gauss/src/GaussSolver.cpp",
+  "file": "/home/jcwang/work/Github/CFDCodes/Gauss/src/GaussSolver.cpp"
 },
 {
-  "directory": "/home/jcwang/work/digNS/code/Gauss/build/src",
-  "command": "/usr/bin/g++   -I/home/jcwang/work/digNS/code/Gauss/include  -g   -o CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o -c /home/jcwang/work/digNS/code/Gauss/src/LUSolver.cpp",
-  "file": "/home/jcwang/work/digNS/code/Gauss/src/LUSolver.cpp"
+  "directory": "/home/jcwang/work/Github/CFDCodes/Gauss/build/src",
+  "command": "/usr/bin/g++   -I/home/jcwang/work/Github/CFDCodes/Gauss/include  -g   -o CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o -c /home/jcwang/work/Github/CFDCodes/Gauss/src/LUSolver.cpp",
+  "file": "/home/jcwang/work/Github/CFDCodes/Gauss/src/LUSolver.cpp"
 },
 {
-  "directory": "/home/jcwang/work/digNS/code/Gauss/build/src",
-  "command": "/usr/bin/g++   -I/home/jcwang/work/digNS/code/Gauss/include  -g   -o CMakeFiles/LIB_SRCS.dir/Matrix.cpp.o -c /home/jcwang/work/digNS/code/Gauss/src/Matrix.cpp",
-  "file": "/home/jcwang/work/digNS/code/Gauss/src/Matrix.cpp"
+  "directory": "/home/jcwang/work/Github/CFDCodes/Gauss/build/src",
+  "command": "/usr/bin/g++   -I/home/jcwang/work/Github/CFDCodes/Gauss/include  -g   -o CMakeFiles/LIB_SRCS.dir/Matrix.cpp.o -c /home/jcwang/work/Github/CFDCodes/Gauss/src/Matrix.cpp",
+  "file": "/home/jcwang/work/Github/CFDCodes/Gauss/src/Matrix.cpp"
 },
 {
-  "directory": "/home/jcwang/work/digNS/code/Gauss/build/src",
-  "command": "/usr/bin/g++   -I/home/jcwang/work/digNS/code/Gauss/include  -g   -o CMakeFiles/LIB_SRCS.dir/Vector.cpp.o -c /home/jcwang/work/digNS/code/Gauss/src/Vector.cpp",
-  "file": "/home/jcwang/work/digNS/code/Gauss/src/Vector.cpp"
+  "directory": "/home/jcwang/work/Github/CFDCodes/Gauss/build/src",
+  "command": "/usr/bin/g++   -I/home/jcwang/work/Github/CFDCodes/Gauss/include  -g   -o CMakeFiles/LIB_SRCS.dir/Vector.cpp.o -c /home/jcwang/work/Github/CFDCodes/Gauss/src/Vector.cpp",
+  "file": "/home/jcwang/work/Github/CFDCodes/Gauss/src/Vector.cpp"
 }
 ]

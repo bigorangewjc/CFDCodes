@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jcwang/work/digNS/code/Gauss/main.cpp" "/home/jcwang/work/digNS/code/Gauss/build/CMakeFiles/GaussSolver.dir/main.cpp.o"
+  "/home/jcwang/work/Github/CFDCodes/Gauss/main.cpp" "/home/jcwang/work/Github/CFDCodes/Gauss/build/CMakeFiles/GaussSolver.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,7 +15,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/jcwang/work/digNS/code/Gauss/build/src/CMakeFiles/LIB_SRCS.dir/DependInfo.cmake"
+  "/home/jcwang/work/Github/CFDCodes/Gauss/build/src/CMakeFiles/LIB_SRCS.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

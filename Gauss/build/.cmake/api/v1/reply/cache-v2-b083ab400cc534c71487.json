@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/jcwang/work/digNS/code/Gauss/build"
+			"value" : "/home/jcwang/work/Github/CFDCodes/Gauss/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -607,7 +607,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/jcwang/work/digNS/code/Gauss"
+			"value" : "/home/jcwang/work/Github/CFDCodes/Gauss"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1143,7 +1143,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/jcwang/work/digNS/code/Gauss/build"
+			"value" : "/home/jcwang/work/Github/CFDCodes/Gauss/build"
 		},
 		{
 			"name" : "GaussSolver_SOURCE_DIR",
@@ -1155,7 +1155,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/jcwang/work/digNS/code/Gauss"
+			"value" : "/home/jcwang/work/Github/CFDCodes/Gauss"
 		}
 	],
 	"kind" : "cache",

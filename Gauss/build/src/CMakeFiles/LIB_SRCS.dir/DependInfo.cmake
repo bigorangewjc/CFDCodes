@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/jcwang/work/digNS/code/Gauss/src/GaussSolver.cpp" "/home/jcwang/work/digNS/code/Gauss/build/src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o"
-  "/home/jcwang/work/digNS/code/Gauss/src/LUSolver.cpp" "/home/jcwang/work/digNS/code/Gauss/build/src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o"
-  "/home/jcwang/work/digNS/code/Gauss/src/Matrix.cpp" "/home/jcwang/work/digNS/code/Gauss/build/src/CMakeFiles/LIB_SRCS.dir/Matrix.cpp.o"
-  "/home/jcwang/work/digNS/code/Gauss/src/Vector.cpp" "/home/jcwang/work/digNS/code/Gauss/build/src/CMakeFiles/LIB_SRCS.dir/Vector.cpp.o"
+  "/home/jcwang/work/Github/CFDCodes/Gauss/src/GaussSolver.cpp" "/home/jcwang/work/Github/CFDCodes/Gauss/build/src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o"
+  "/home/jcwang/work/Github/CFDCodes/Gauss/src/LUSolver.cpp" "/home/jcwang/work/Github/CFDCodes/Gauss/build/src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o"
+  "/home/jcwang/work/Github/CFDCodes/Gauss/src/Matrix.cpp" "/home/jcwang/work/Github/CFDCodes/Gauss/build/src/CMakeFiles/LIB_SRCS.dir/Matrix.cpp.o"
+  "/home/jcwang/work/Github/CFDCodes/Gauss/src/Vector.cpp" "/home/jcwang/work/Github/CFDCodes/Gauss/build/src/CMakeFiles/LIB_SRCS.dir/Vector.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
