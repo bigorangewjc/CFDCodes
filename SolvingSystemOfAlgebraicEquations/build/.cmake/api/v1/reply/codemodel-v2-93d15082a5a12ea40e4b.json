@@ -58,14 +58,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "GaussSolver::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-GaussSolver-Debug-1e61dd0381e225a3bfaa.json",
+					"jsonFile" : "target-GaussSolver-Debug-f669fd588dbc03a0dd92.json",
 					"name" : "GaussSolver",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "LIB_SRCS::@145eef247bfb46b6828c",
-					"jsonFile" : "target-LIB_SRCS-Debug-9c00b3bc3afa3dc5fc38.json",
+					"jsonFile" : "target-LIB_SRCS-Debug-406fa038a438afcafe90.json",
 					"name" : "LIB_SRCS",
 					"projectIndex" : 0
 				}
@@ -75,8 +75,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/jcwang/work/Github/CFDCodes/Gauss/build",
-		"source" : "/home/jcwang/work/Github/CFDCodes/Gauss"
+		"build" : "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build",
+		"source" : "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations"
 	},
 	"version" : 
 	{

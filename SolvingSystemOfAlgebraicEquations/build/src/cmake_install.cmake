@@ -1,4 +1,4 @@
-# Install script for directory: /home/jcwang/work/Github/CFDCodes/Gauss/src
+# Install script for directory: /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

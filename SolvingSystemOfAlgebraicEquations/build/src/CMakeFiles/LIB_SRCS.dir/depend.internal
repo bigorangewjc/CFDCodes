@@ -5,15 +5,15 @@ src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o
  ../include/GaussSolver.h
  ../include/Matrix.h
  ../include/Vector.h
- /home/jcwang/work/Github/CFDCodes/Gauss/src/GaussSolver.cpp
+ /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/GaussSolver.cpp
 src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o
  ../include/LUSolver.h
  ../include/Matrix.h
  ../include/Vector.h
- /home/jcwang/work/Github/CFDCodes/Gauss/src/LUSolver.cpp
+ /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/LUSolver.cpp
 src/CMakeFiles/LIB_SRCS.dir/Matrix.cpp.o
  ../include/Matrix.h
- /home/jcwang/work/Github/CFDCodes/Gauss/src/Matrix.cpp
+ /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Matrix.cpp
 src/CMakeFiles/LIB_SRCS.dir/Vector.cpp.o
  ../include/Vector.h
- /home/jcwang/work/Github/CFDCodes/Gauss/src/Vector.cpp
+ /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Vector.cpp

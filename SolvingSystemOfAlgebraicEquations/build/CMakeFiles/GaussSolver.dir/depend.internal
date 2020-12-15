@@ -6,4 +6,4 @@ CMakeFiles/GaussSolver.dir/main.cpp.o
  ../include/LUSolver.h
  ../include/Matrix.h
  ../include/Vector.h
- /home/jcwang/work/Github/CFDCodes/Gauss/main.cpp
+ /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/main.cpp

@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/jcwang/work/Github/CFDCodes/Gauss/include 
+CXX_INCLUDES = -I/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/include 
 
