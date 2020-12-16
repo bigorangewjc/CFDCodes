@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ctime>
 #include "GaussSolver.h"
 #include "LUSolver.h"
 #include "Matrix.h"
@@ -31,27 +32,36 @@ int main()
   // Initialize GaussSolver
   CGaussSolver *pobjGaussSolver = new CGaussSolver(*pobjMatAGauss, *pobjVecBGauss);
   // Solve linear equation system by GaussSolver
+  clock_t tBegin = clock();
   pobjGaussSolver->Solve();
+  double dInterval = double(clock() - tBegin) / 1000;
   std::cout << "\nAfter Gauss elimination:" << std::endl;
   pobjMatAGauss->Display();
   std::cout << "\nGaussSolver solution:" << std::endl;
   pobjVecBGauss->Display();
+  std::cout << "\nTime: " << dInterval << "s"<< std::endl;
 
   // Initialize LUSolver
   CLUSolver *pobjLUSolver = new CLUSolver(*pobjMatALU, *pobjVecBLU);
   // Solve linear equation system by LUSolver
-  pobjLUSolver->Solve("Gauss");
+  tBegin = clock();
+  pobjLUSolver->Solve();
+  dInterval = double(clock() - tBegin) / 1000;
   std::cout << "\nAfter LU factorization:" << std::endl;
   pobjMatALU->Display();
   std::cout << "\nLUSolver solution:" << std::endl;
   pobjVecBLU->Display();
+  std::cout << "\nTime: " << dInterval << "s"<< std::endl;
 
   pobjVecBLU->SetElement(0, 1.0);
   pobjVecBLU->SetElement(1, 1.0/2.0);
   pobjVecBLU->SetElement(2, 1.0/3.0);
+  tBegin = clock();
   pobjLUSolver->SolveNewB(*pobjVecBLU);
+  dInterval = double(clock() - tBegin) / 1000;
   std::cout << "\nLUSolver solution of new B:" << std::endl;
   pobjVecBLU->Display();
+  std::cout << "\nTime: " << dInterval << "s"<< std::endl;
 
   return 0;
 };
