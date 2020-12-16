@@ -6,6 +6,11 @@ src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o: ../include/Matrix.h
 src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o: ../include/Vector.h
 src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o: ../src/GaussSolver.cpp
 
+src/CMakeFiles/LIB_SRCS.dir/JacobiSolver.cpp.o: ../include/JacobiSolver.h
+src/CMakeFiles/LIB_SRCS.dir/JacobiSolver.cpp.o: ../include/Matrix.h
+src/CMakeFiles/LIB_SRCS.dir/JacobiSolver.cpp.o: ../include/Vector.h
+src/CMakeFiles/LIB_SRCS.dir/JacobiSolver.cpp.o: ../src/JacobiSolver.cpp
+
 src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o: ../include/LUSolver.h
 src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o: ../include/Matrix.h
 src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o: ../include/Vector.h

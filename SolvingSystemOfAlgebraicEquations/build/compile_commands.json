@@ -11,6 +11,11 @@
 },
 {
   "directory": "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src",
+  "command": "/usr/bin/g++   -I/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/include  -g   -o CMakeFiles/LIB_SRCS.dir/JacobiSolver.cpp.o -c /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/JacobiSolver.cpp",
+  "file": "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/JacobiSolver.cpp"
+},
+{
+  "directory": "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src",
   "command": "/usr/bin/g++   -I/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/include  -g   -o CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o -c /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/LUSolver.cpp",
   "file": "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/LUSolver.cpp"
 },

@@ -8,6 +8,8 @@
 
 ../include/GaussSolver.h
 
+../include/JacobiSolver.h
+
 ../include/LUSolver.h
 string
 -
@@ -23,6 +25,8 @@ ctime
 -
 GaussSolver.h
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/GaussSolver.h
+JacobiSolver.h
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/JacobiSolver.h
 LUSolver.h
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/LUSolver.h
 Matrix.h

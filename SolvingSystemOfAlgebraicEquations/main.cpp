@@ -1,6 +1,7 @@
 #include <iostream>
 #include <ctime>
 #include "GaussSolver.h"
+#include "JacobiSolver.h"
 #include "LUSolver.h"
 #include "Matrix.h"
 #include "Vector.h"
@@ -29,6 +30,8 @@ int main()
   // Clone A-Gauss to A-LU and clone b-Guass to b-LU
   CMatrix* pobjMatALU = new CMatrix(*pobjMatAGauss);
   CVector* pobjVecBLU = new CVector(*pobjVecBGauss); 
+  CMatrix* pobjMatAJac = new CMatrix(*pobjMatAGauss);
+  CVector* pobjVecBJac = new CVector(*pobjVecBGauss);
   // Initialize GaussSolver
   CGaussSolver *pobjGaussSolver = new CGaussSolver(*pobjMatAGauss, *pobjVecBGauss);
   // Solve linear equation system by GaussSolver
@@ -61,6 +64,20 @@ int main()
   dInterval = double(clock() - tBegin) / 1000;
   std::cout << "\nLUSolver solution of new B:" << std::endl;
   pobjVecBLU->Display();
+  std::cout << "\nTime: " << dInterval << "s"<< std::endl;
+
+ // Initialize JacobiSolver
+  CVector* pobjVecInit = new CVector(3);
+  CJacobiSolver *pobjJacobiSolver = new CJacobiSolver(
+    *pobjMatAJac, *pobjVecBJac, *pobjVecInit, 0.00001);
+  // Solve linear equation system by JacobiSolver
+  tBegin = clock();
+  pobjJacobiSolver->Solve();
+  dInterval = double(clock() - tBegin) / 1000;
+  std::cout << "\nAfter Jacobi iteration:" << std::endl;
+  pobjMatAJac->Display();
+  std::cout << "\nJacobiSolver solution:" << std::endl;
+  pobjVecBJac->Display();
   std::cout << "\nTime: " << dInterval << "s"<< std::endl;
 
   return 0;

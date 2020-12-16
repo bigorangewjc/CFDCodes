@@ -3,6 +3,7 @@
 
 CMakeFiles/GaussSolver.dir/main.cpp.o
  ../include/GaussSolver.h
+ ../include/JacobiSolver.h
  ../include/LUSolver.h
  ../include/Matrix.h
  ../include/Vector.h
