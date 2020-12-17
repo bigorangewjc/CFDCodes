@@ -35,21 +35,17 @@ CJacobiSolver::CJacobiSolver(
     std::cout << "Initial vector is NULL" << std::endl;
     abort();
   }
-  double* m_pdVecX = new double[m_iRows];
+  pobjVecX = new CVector(m_iRows);
+  m_pdVecX = pobjVecX->GetVector();
 }
 CJacobiSolver::~CJacobiSolver()
 {
 
 }
-double* CJacobiSolver::Solve()
+CVector* CJacobiSolver::Solve()
 {
   int iIter = 1;
   double dError = 0.0;
-  for (int iI = 0; iI < m_iRows; iI++)
-  {
-        std::cout << "Debug" << std::endl;
-      m_pdVecX[iI] = m_pdVecXPrev[iI];
-  }
   while (1 == iIter || dError > m_dThreshold)
   {
     std::cout << "iIter = " << iIter << std::endl;
@@ -61,7 +57,7 @@ double* CJacobiSolver::Solve()
         {
             if (iI != iJ)
             {
-                m_pdVecX[iI] -= m_pdMatA[iI][iJ] * m_pdVecX[iJ]; 
+                m_pdVecX[iI] -= m_pdMatA[iI][iJ] * m_pdVecXPrev[iJ]; 
             }
         }
         m_pdVecX[iI] /= m_pdMatA[iI][iI];
@@ -70,6 +66,7 @@ double* CJacobiSolver::Solve()
     //   two consecutive iteration estimates
     double dTmp = 0.0;
     dError = fabs(m_pdVecX[0] - m_pdVecXPrev[0]);
+    m_pdVecXPrev[0] = m_pdVecX[0];
     for (int iI = 1; iI < m_iRows; iI++)
     {
         dTmp = fabs(m_pdVecX[iI] - m_pdVecXPrev[iI]);
@@ -77,11 +74,13 @@ double* CJacobiSolver::Solve()
         {
             dError = dTmp;
         }
+        std::cout << m_pdVecXPrev[iI] << std::endl;
+        m_pdVecXPrev[iI] = m_pdVecX[iI];
     }
     std::cout << "dError = " << dError << std::endl;
     iIter++;
   }
-  return m_pdVecB;
+  return pobjVecX;
 }
 void CJacobiSolver::SetNewThreshold(const double& dThreshold)
 {

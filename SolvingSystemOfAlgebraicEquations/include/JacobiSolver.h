@@ -13,8 +13,9 @@ public:
   void SetNewThreshold(const double& dThreshold);
   void SetNewMatA(CMatrix& objMatA);
   void SetNewVecB(CVector& objVecB);
-  double* Solve();
+  CVector* Solve();
 private:
+  CVector* pobjVecX;
   double m_dThreshold;
   double** m_pdMatA;
   double* m_pdVecB;

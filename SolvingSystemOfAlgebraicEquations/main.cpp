@@ -27,11 +27,9 @@ int main()
   pobjVecBGauss->SetElement(1, 1.0/2.0);
   pobjVecBGauss->SetElement(2, 1.0/3.0);
   pobjVecBGauss->Display();
-  // Clone A-Gauss to A-LU and clone b-Guass to b-LU
+  // Clone A-Gauss to A-LU and clone b-Gauss to b-LU
   CMatrix* pobjMatALU = new CMatrix(*pobjMatAGauss);
-  CVector* pobjVecBLU = new CVector(*pobjVecBGauss); 
-  CMatrix* pobjMatAJac = new CMatrix(*pobjMatAGauss);
-  CVector* pobjVecBJac = new CVector(*pobjVecBGauss);
+  CVector* pobjVecBLU = new CVector(*pobjVecBGauss);
   // Initialize GaussSolver
   CGaussSolver *pobjGaussSolver = new CGaussSolver(*pobjMatAGauss, *pobjVecBGauss);
   // Solve linear equation system by GaussSolver
@@ -66,18 +64,40 @@ int main()
   pobjVecBLU->Display();
   std::cout << "\nTime: " << dInterval << "s"<< std::endl;
 
- // Initialize JacobiSolver
-  CVector* pobjVecInit = new CVector(3);
+  // Initialize JacobiSolver
+  CMatrix* pobjMatAJac = new CMatrix(4, 4);
+  CVector* pobjVecBJac = new CVector(4);
+  pobjMatAJac->SetElement(0, 0, 3);
+  pobjMatAJac->SetElement(0, 1, -1);
+  pobjMatAJac->SetElement(0, 2, 0);
+  pobjMatAJac->SetElement(0, 3, 0);
+  pobjMatAJac->SetElement(1, 0, -2);
+  pobjMatAJac->SetElement(1, 1, 6);
+  pobjMatAJac->SetElement(1, 2, -1);
+  pobjMatAJac->SetElement(1, 3, 0);
+  pobjMatAJac->SetElement(2, 0, 0);
+  pobjMatAJac->SetElement(2, 1, -2);
+  pobjMatAJac->SetElement(2, 2, 6);
+  pobjMatAJac->SetElement(2, 3, -1);
+  pobjMatAJac->SetElement(3, 0, 0);
+  pobjMatAJac->SetElement(3, 1, 0);
+  pobjMatAJac->SetElement(3, 2, -2);
+  pobjMatAJac->SetElement(3, 3, 7);
+  pobjVecBJac->SetElement(0, 3);
+  pobjVecBJac->SetElement(1, 4);
+  pobjVecBJac->SetElement(2, 5);
+  pobjVecBJac->SetElement(3, -3);
+  CVector* pobjVecInit = new CVector(4);
   CJacobiSolver *pobjJacobiSolver = new CJacobiSolver(
-    *pobjMatAJac, *pobjVecBJac, *pobjVecInit, 0.00001);
+    *pobjMatAJac, *pobjVecBJac, *pobjVecInit, 1.0e-5);
   // Solve linear equation system by JacobiSolver
   tBegin = clock();
-  pobjJacobiSolver->Solve();
+  CVector* pobjVecX = pobjJacobiSolver->Solve();
   dInterval = double(clock() - tBegin) / 1000;
   std::cout << "\nAfter Jacobi iteration:" << std::endl;
   pobjMatAJac->Display();
   std::cout << "\nJacobiSolver solution:" << std::endl;
-  pobjVecBJac->Display();
+  pobjVecX->Display();
   std::cout << "\nTime: " << dInterval << "s"<< std::endl;
 
   return 0;

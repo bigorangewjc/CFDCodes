@@ -8,7 +8,7 @@ CVector::CVector(int iRows)
   m_pdVector = new double [m_iRows]; 
   for (int i = 0; i < m_iRows; i++)
   {
-    m_pdVector[i] = 1.0;
+    m_pdVector[i] = 0.0;
   }
 }
 
