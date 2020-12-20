@@ -3,62 +3,57 @@
 
 CVector::CVector(int iRows)
   : m_iRows(iRows)
-  , m_pdVector(nullptr)
+  , m_pdVec(nullptr)
 {
-  m_pdVector = new double [m_iRows]; 
+  m_pdVec = new double [m_iRows]; 
   for (int i = 0; i < m_iRows; i++)
   {
-    m_pdVector[i] = 0.0;
+    m_pdVec[i] = 0.0;
   }
 }
 
-CVector::CVector(CVector& objVector)
+CVector::CVector(const CVector& objVector)
 {
-  m_iRows = objVector.GetRows();
-  m_pdVector = new double [m_iRows];
+  m_iRows = objVector.GetNumRows();
+  m_pdVec = new double [m_iRows];
   for (int i = 0; i < m_iRows; i++)
   {
-    m_pdVector[i] = objVector.GetElement(i);
+    m_pdVec[i] = objVector(i);
   }
 }
 
 CVector::~CVector()
 {
-  delete[] m_pdVector;
+  delete[] m_pdVec;
 }
 
-int CVector::GetRows()
+inline double* CVector::GetVec() const
+{
+    return m_pdVec;
+}
+
+inline int CVector::GetNumRows() const
 {
   return m_iRows;
 }
 
-double CVector::GetElement(int iRow)
+inline double& CVector::operator()(const int iRow) const
 {
-  return m_pdVector[iRow];
+    if (nullptr == m_pdVec)
+    {
+        std::cout << "m_pdVec has not been initialized" << std::endl;
+        abort();
+    }
+    return m_pdVec[iRow];
 }
 
-void CVector::SetElement(int iRow, double dVal)
-{
-  if (nullptr == m_pdVector)
-  {
-    std::cout << "m_pdVector has not been initialized!" << std::endl;
-    return;
-  }
-  m_pdVector[iRow] = dVal;
-}
-
-double* CVector::GetVector()
-{
-  return m_pdVector;
-}
-
-void CVector::Display()
+void CVector::Print()
 {
   std::cout << "m_pdVector = " << std::endl;
-  std::cout << "[" << m_pdVector[0] << std::endl;
+  std::cout << "[" << m_pdVec[0] << std::endl;
   for (int iRow = 1; iRow < m_iRows-1; iRow++)
   {
-    std::cout << " " << m_pdVector[iRow] << std::endl;;
+    std::cout << " " << m_pdVec[iRow] << std::endl;;
   }
-  std::cout << " " << m_pdVector[m_iRows-1] << "]" << std::endl;
+  std::cout << " " << m_pdVec[m_iRows-1] << "]" << std::endl;
 }

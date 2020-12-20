@@ -172,6 +172,33 @@ GaussSolver.cpp.s:
 	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LIB_SRCS.dir/build.make src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.s
 .PHONY : GaussSolver.cpp.s
 
+ISolver.o: ISolver.cpp.o
+
+.PHONY : ISolver.o
+
+# target to build an object file
+ISolver.cpp.o:
+	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LIB_SRCS.dir/build.make src/CMakeFiles/LIB_SRCS.dir/ISolver.cpp.o
+.PHONY : ISolver.cpp.o
+
+ISolver.i: ISolver.cpp.i
+
+.PHONY : ISolver.i
+
+# target to preprocess a source file
+ISolver.cpp.i:
+	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LIB_SRCS.dir/build.make src/CMakeFiles/LIB_SRCS.dir/ISolver.cpp.i
+.PHONY : ISolver.cpp.i
+
+ISolver.s: ISolver.cpp.s
+
+.PHONY : ISolver.s
+
+# target to generate assembly for a file
+ISolver.cpp.s:
+	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LIB_SRCS.dir/build.make src/CMakeFiles/LIB_SRCS.dir/ISolver.cpp.s
+.PHONY : ISolver.cpp.s
+
 JacobiSolver.o: JacobiSolver.cpp.o
 
 .PHONY : JacobiSolver.o
@@ -292,6 +319,9 @@ help:
 	@echo "... GaussSolver.o"
 	@echo "... GaussSolver.i"
 	@echo "... GaussSolver.s"
+	@echo "... ISolver.o"
+	@echo "... ISolver.i"
+	@echo "... ISolver.s"
 	@echo "... JacobiSolver.o"
 	@echo "... JacobiSolver.i"
 	@echo "... JacobiSolver.s"

@@ -1,3 +1,4 @@
+#ifdef JCWANG
 #ifndef LU_SOLVER_H
 #define LU_SOLVER_H
 
@@ -24,3 +25,4 @@ private:
     int m_iRows;
 };
 #endif//LU_SOLVER_H
+#endif

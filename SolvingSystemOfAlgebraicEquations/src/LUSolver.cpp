@@ -1,3 +1,4 @@
+#ifdef JCWANG
 #include "LUSolver.h"
 #include <iostream>
 #include "Matrix.h"
@@ -6,8 +7,8 @@
 CLUSolver::CLUSolver(CMatrix& objMatA, CVector& objVecB)
   : m_pdMatA(objMatA.GetMat()) 
   , m_pdVecB(objVecB.GetVector())
-  , m_iRows(objVecB.GetRows())
-  , m_iColumns(objMatA.GetColumns())
+  , m_iRows(objVecB.GetNumRows())
+  , m_iColumns(objMatA.GetNumCols())
 {
   if (m_iRows != m_iColumns)
   {
@@ -54,11 +55,11 @@ double* CLUSolver::Solve(std::string sMethod)
 
 double* CLUSolver::SolveNewB(CVector& objVecB)
 {
-  if (m_iColumns != objVecB.GetRows())
+  if (m_iColumns != objVecB.GetNumRows())
   {
     std::cout << "A's column number " << m_iColumns
       << " is not equal to new B's row number "
-       << objVecB.GetRows() << std::endl;
+       << objVecB.GetNumRows() << std::endl;
     abort();
   }
   m_pdVecB = objVecB.GetVector();
@@ -151,3 +152,4 @@ void CLUSolver::BackwardSubstitution()
     m_pdVecB[iI] /= m_pdMatA[iI][iI];
   }
 }
+#endif

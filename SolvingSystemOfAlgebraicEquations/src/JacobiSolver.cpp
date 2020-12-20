@@ -1,3 +1,4 @@
+#ifdef JCWANG
 #include "JacobiSolver.h"
 #include <cmath>
 #include <iostream>
@@ -10,8 +11,8 @@ CJacobiSolver::CJacobiSolver(
   : m_pdMatA(objMatA.GetMat()) 
   , m_pdVecB(objVecB.GetVector())
   , m_pdVecXPrev(objVecInit.GetVector())
-  , m_iRows(objVecB.GetRows())
-  , m_iColumns(objMatA.GetColumns())
+  , m_iRows(objVecB.GetNumRows())
+  , m_iColumns(objMatA.GetNumCols())
   , m_dThreshold(dThreshold)
 {
   if (m_iRows != m_iColumns)
@@ -48,7 +49,6 @@ CVector* CJacobiSolver::Solve()
   double dError = 0.0;
   while (1 == iIter || dError > m_dThreshold)
   {
-    std::cout << "iIter = " << iIter << std::endl;
     // Calculate new estimates
     for (int iI = 0; iI < m_iRows; iI++)
     {
@@ -74,10 +74,9 @@ CVector* CJacobiSolver::Solve()
         {
             dError = dTmp;
         }
-        std::cout << m_pdVecXPrev[iI] << std::endl;
         m_pdVecXPrev[iI] = m_pdVecX[iI];
     }
-    std::cout << "dError = " << dError << std::endl;
+    std::cout << "iIter = " << iIter << ", dError = " << dError << std::endl;
     iIter++;
   }
   return pobjVecX;
@@ -88,18 +87,18 @@ void CJacobiSolver::SetNewThreshold(const double& dThreshold)
 }
 void CJacobiSolver::SetNewMatA(CMatrix& objMatA)
 {
-  if (objMatA.GetRows() != objMatA.GetColumns())
+  if (objMatA.GetNumRows() != objMatA.GetNumCols())
   {
     std::cout << "New matrix A is not a square matrix" << std::endl;
     abort();
   }
   m_pdMatA = objMatA.GetMat();
-  m_iRows = objMatA.GetRows();
-  m_iColumns = objMatA.GetColumns();
+  m_iRows = objMatA.GetNumRows();
+  m_iColumns = objMatA.GetNumCols();
 }
 void CJacobiSolver::SetNewVecB(CVector& objVecB)
 {
-  if (m_iColumns != objVecB.GetRows())
+  if (m_iColumns != objVecB.GetNumRows())
   {
     std::cout << "A's column number " << m_iColumns
       << " is not equal to new B's row number " << m_iRows << std::endl;
@@ -107,3 +106,4 @@ void CJacobiSolver::SetNewVecB(CVector& objVecB)
   }
   m_pdVecB = objVecB.GetVector();
 }
+#endif

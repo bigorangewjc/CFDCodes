@@ -7,6 +7,10 @@
 #IncludeRegexTransform: 
 
 ../include/GaussSolver.h
+ISolver.h
+../include/ISolver.h
+
+../include/ISolver.h
 
 ../include/JacobiSolver.h
 
@@ -23,6 +27,8 @@ iostream
 -
 ctime
 -
+ISolver.h
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/ISolver.h
 GaussSolver.h
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/GaussSolver.h
 JacobiSolver.h

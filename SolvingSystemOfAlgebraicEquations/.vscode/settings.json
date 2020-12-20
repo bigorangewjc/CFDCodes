@@ -1,6 +1,7 @@
 {
     "files.associations": {
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "ISolver.C": "cpp"
     },
     "clang.cxxflags": [
         "-I${workspaceRoot}/include"

@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o"
+  "CMakeFiles/LIB_SRCS.dir/ISolver.cpp.o"
   "CMakeFiles/LIB_SRCS.dir/JacobiSolver.cpp.o"
   "CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o"
   "CMakeFiles/LIB_SRCS.dir/Matrix.cpp.o"

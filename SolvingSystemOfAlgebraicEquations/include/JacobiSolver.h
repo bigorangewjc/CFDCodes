@@ -1,3 +1,4 @@
+#ifdef JCWANG
 #ifndef JACOBI_SOLVER_H
 #define JACOBI_SOLVER_H
 
@@ -25,3 +26,4 @@ private:
   int m_iRows;
 };
 #endif//JACOBI_SOLVER_H
+#endif

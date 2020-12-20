@@ -1,5 +1,6 @@
 #include <iostream>
 #include <ctime>
+#include "ISolver.h"
 #include "GaussSolver.h"
 #include "JacobiSolver.h"
 #include "LUSolver.h"
@@ -10,95 +11,70 @@ int main()
 {
   std::cout << "\nInitial setup:" << std::endl;
   // Initialize matrix A and vector b
-  int iRank = 3;
-  CMatrix *pobjMatAGauss = new CMatrix(iRank, iRank);
-  pobjMatAGauss->SetElement(0, 0, 1.0 /2.0);
-  pobjMatAGauss->SetElement(0, 1, 2.0 /3.0);
-  pobjMatAGauss->SetElement(0, 2, 3.0 /4.0);
-  pobjMatAGauss->SetElement(1, 0, 1.0 /6.0);
-  pobjMatAGauss->SetElement(1, 1, 5.0 /12.0);
-  pobjMatAGauss->SetElement(1, 2, 11.0/20.0);
-  pobjMatAGauss->SetElement(2, 0, 1.0 /12.0);
-  pobjMatAGauss->SetElement(2, 1, 3.0 /10.0);
-  pobjMatAGauss->SetElement(2, 2, 13.0/30.0);
-  pobjMatAGauss->Display();
-  CVector *pobjVecBGauss= new CVector(iRank);
-  pobjVecBGauss->SetElement(0, 1.0);
-  pobjVecBGauss->SetElement(1, 1.0/2.0);
-  pobjVecBGauss->SetElement(2, 1.0/3.0);
-  pobjVecBGauss->Display();
-  // Clone A-Gauss to A-LU and clone b-Gauss to b-LU
-  CMatrix* pobjMatALU = new CMatrix(*pobjMatAGauss);
-  CVector* pobjVecBLU = new CVector(*pobjVecBGauss);
+  int iRank = 4;
+  CMatrix& objMat = *(new CMatrix(iRank, iRank));
+  CVector& objVecB = *(new CVector(iRank));
+  CVector& objVecXGau = *(new CVector(iRank));
+  CVector& objVecXLU = *(new CVector(iRank));
+  CVector& objVecXJac = *(new CVector(iRank));
+  objMat(0, 0) = 3;
+  objMat(0, 1) = -1;
+  objMat(0, 2) = 0;
+  objMat(0, 3) = 0;
+  objMat(1, 0) = -2;
+  objMat(1, 1) = 6;
+  objMat(1, 2) = -1;
+  objMat(1, 3) = 0;
+  objMat(2, 0) = 0;
+  objMat(2, 1) = -2;
+  objMat(2, 2) = 6;
+  objMat(2, 3) = -1;
+  objMat(3, 0) = 0;
+  objMat(3, 1) = 0;
+  objMat(3, 2) = -2;
+  objMat(3, 3) = 7;
+  objVecB(0) = 3;
+  objVecB(1) = 4;
+  objVecB(2) = 5;
+  objVecB(3) = -3;
   // Initialize GaussSolver
-  CGaussSolver *pobjGaussSolver = new CGaussSolver(*pobjMatAGauss, *pobjVecBGauss);
+  CGaussSolver *pobjGaussSolver = new CGaussSolver(objMat, objVecB);
   // Solve linear equation system by GaussSolver
   clock_t tBegin = clock();
-  pobjGaussSolver->Solve();
+  pobjGaussSolver->Solve(objVecXGau);
   double dInterval = double(clock() - tBegin) / 1000;
-  std::cout << "\nAfter Gauss elimination:" << std::endl;
-  pobjMatAGauss->Display();
   std::cout << "\nGaussSolver solution:" << std::endl;
-  pobjVecBGauss->Display();
+  objVecXGau.Print();
   std::cout << "\nTime: " << dInterval << "s"<< std::endl;
 
-  // Initialize LUSolver
-  CLUSolver *pobjLUSolver = new CLUSolver(*pobjMatALU, *pobjVecBLU);
-  // Solve linear equation system by LUSolver
-  tBegin = clock();
-  pobjLUSolver->Solve();
-  dInterval = double(clock() - tBegin) / 1000;
-  std::cout << "\nAfter LU factorization:" << std::endl;
-  pobjMatALU->Display();
-  std::cout << "\nLUSolver solution:" << std::endl;
-  pobjVecBLU->Display();
-  std::cout << "\nTime: " << dInterval << "s"<< std::endl;
+//   // Initialize LUSolver
+//   CLUSolver *pobjLUSolver = new CLUSolver(objMat, objVecB);
+//   // Solve linear equation system by LUSolver
+//   tBegin = clock();
+//   pobjLUSolver->Solve();
+//   dInterval = double(clock() - tBegin) / 1000;
+//   std::cout << "\nLUSolver solution:" << std::endl;
+//   objVecXLU.Print();
+//   std::cout << "\nTime: " << dInterval << "s"<< std::endl;
 
-  pobjVecBLU->SetElement(0, 1.0);
-  pobjVecBLU->SetElement(1, 1.0/2.0);
-  pobjVecBLU->SetElement(2, 1.0/3.0);
-  tBegin = clock();
-  pobjLUSolver->SolveNewB(*pobjVecBLU);
-  dInterval = double(clock() - tBegin) / 1000;
-  std::cout << "\nLUSolver solution of new B:" << std::endl;
-  pobjVecBLU->Display();
-  std::cout << "\nTime: " << dInterval << "s"<< std::endl;
+//   tBegin = clock();
+//   pobjLUSolver->Solve();
+//   dInterval = double(clock() - tBegin) / 1000;
+//   std::cout << "\nLUSolver solution of new B:" << std::endl;
+//   objVecXLU.Print();
+//   std::cout << "\nTime: " << dInterval << "s\n"<< std::endl;
 
-  // Initialize JacobiSolver
-  CMatrix* pobjMatAJac = new CMatrix(4, 4);
-  CVector* pobjVecBJac = new CVector(4);
-  pobjMatAJac->SetElement(0, 0, 3);
-  pobjMatAJac->SetElement(0, 1, -1);
-  pobjMatAJac->SetElement(0, 2, 0);
-  pobjMatAJac->SetElement(0, 3, 0);
-  pobjMatAJac->SetElement(1, 0, -2);
-  pobjMatAJac->SetElement(1, 1, 6);
-  pobjMatAJac->SetElement(1, 2, -1);
-  pobjMatAJac->SetElement(1, 3, 0);
-  pobjMatAJac->SetElement(2, 0, 0);
-  pobjMatAJac->SetElement(2, 1, -2);
-  pobjMatAJac->SetElement(2, 2, 6);
-  pobjMatAJac->SetElement(2, 3, -1);
-  pobjMatAJac->SetElement(3, 0, 0);
-  pobjMatAJac->SetElement(3, 1, 0);
-  pobjMatAJac->SetElement(3, 2, -2);
-  pobjMatAJac->SetElement(3, 3, 7);
-  pobjVecBJac->SetElement(0, 3);
-  pobjVecBJac->SetElement(1, 4);
-  pobjVecBJac->SetElement(2, 5);
-  pobjVecBJac->SetElement(3, -3);
-  CVector* pobjVecInit = new CVector(4);
-  CJacobiSolver *pobjJacobiSolver = new CJacobiSolver(
-    *pobjMatAJac, *pobjVecBJac, *pobjVecInit, 1.0e-5);
-  // Solve linear equation system by JacobiSolver
-  tBegin = clock();
-  CVector* pobjVecX = pobjJacobiSolver->Solve();
-  dInterval = double(clock() - tBegin) / 1000;
-  std::cout << "\nAfter Jacobi iteration:" << std::endl;
-  pobjMatAJac->Display();
-  std::cout << "\nJacobiSolver solution:" << std::endl;
-  pobjVecX->Display();
-  std::cout << "\nTime: " << dInterval << "s"<< std::endl;
+//   // Initialize JacobiSolver
+//   CVector& objVecInit = *(new CVector(4));
+//   CJacobiSolver *pobjJacobiSolver = new CJacobiSolver(
+//     objMat, objVecB, objVecInit, 1.0e-5);
+//   // Solve linear equation system by JacobiSolver
+//   tBegin = clock();
+//   pobjJacobiSolver->Solve();
+//   dInterval = double(clock() - tBegin) / 1000;
+//   std::cout << "\nJacobiSolver solution:" << std::endl;
+//   objVecXJac.Print();
+//   std::cout << "\nTime: " << dInterval << "s"<< std::endl;
 
   return 0;
 };

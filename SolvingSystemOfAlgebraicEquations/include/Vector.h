@@ -5,16 +5,15 @@ class CVector
 {
 public:
   CVector(int iRows);
-  CVector(CVector& objVector);
+  CVector(const CVector& objVec);
   virtual ~CVector();
-  void Display();
-  double GetElement(int iRow);
-  int GetRows();
-  double* GetVector();
-  void SetElement(int iRow, double dVal);
+  inline double* GetVec() const;
+  inline int GetNumRows() const;
+  inline double& operator()(const int iRow) const;
+  void Print();
 
 private:
   int m_iRows;
-  double* m_pdVector;
+  double* m_pdVec;
 };
 #endif//VECTOR_H

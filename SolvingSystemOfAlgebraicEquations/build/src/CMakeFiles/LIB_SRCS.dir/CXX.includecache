@@ -6,17 +6,19 @@
 
 #IncludeRegexTransform: 
 
-../include/JacobiSolver.h
+../include/GaussSolver.h
+ISolver.h
+../include/ISolver.h
+
+../include/ISolver.h
 
 ../include/Matrix.h
 
 ../include/Vector.h
 
-/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/JacobiSolver.cpp
-JacobiSolver.h
-/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/JacobiSolver.h
-cmath
--
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/GaussSolver.cpp
+GaussSolver.h
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/GaussSolver.h
 iostream
 -
 Matrix.h
