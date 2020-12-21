@@ -32,9 +32,9 @@ void ISolver::SetNewMat(const CMatrix &objMat)
                   << ")" << std::endl;
         abort();
     }
-    for (int iRow; iRow < m_iRows; iRow++)
+    for (int iRow = 0; iRow < m_iRows; iRow++)
     {
-        for (int iCol; iCol < m_iCols; iCol++)
+        for (int iCol = 0; iCol < m_iCols; iCol++)
         {
             m_objMat(iRow, iCol) = objMat(iRow, iCol);
         }
@@ -50,7 +50,7 @@ void ISolver::SetNewVecB(const CVector &objVecB)
                   << m_iRows << std::endl;
         abort();
     }
-    for (int iRow; iRow < m_iCols; iRow++)
+    for (int iRow = 0; iRow < m_iCols; iRow++)
     {
         m_objVecB(iRow) = objVecB(iRow);
     }

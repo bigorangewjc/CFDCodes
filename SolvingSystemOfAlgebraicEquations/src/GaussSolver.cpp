@@ -23,8 +23,8 @@ void CGaussSolver::Solve(CVector &objVecX)
         {
             // The element located in lower triangle of matrix will be eliminated
             //   to be zero, so the ratio of the element in lower triangle of matrix
-            //    and the diagonal element is zero after eliminating. As a result,
-            //    we need to store the quotient in a new variable dRatio.
+            //   and the diagonal element is zero after eliminating. As a result,
+            //   we need to store the quotient in a new variable dRatio.
             double dRatio = m_objMat(iRow, iColElim) / m_objMat(iColElim, iColElim);
             // In fact, there's no need to calculate elements aligned in column iColElim
             for (int iCol = iColElim; iCol < m_iCols; iCol++)
