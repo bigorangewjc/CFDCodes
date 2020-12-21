@@ -6,19 +6,21 @@
 
 #IncludeRegexTransform: 
 
-../include/GaussSolver.h
-ISolver.h
 ../include/ISolver.h
 
+../include/LUSolver.h
+ISolver.h
 ../include/ISolver.h
+string
+-
 
 ../include/Matrix.h
 
 ../include/Vector.h
 
-/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/GaussSolver.cpp
-GaussSolver.h
-/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/GaussSolver.h
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/LUSolver.cpp
+LUSolver.h
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/LUSolver.h
 iostream
 -
 Matrix.h

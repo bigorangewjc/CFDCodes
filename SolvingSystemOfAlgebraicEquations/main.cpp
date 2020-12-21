@@ -14,6 +14,7 @@ int main()
   int iRank = 4;
   CMatrix& objMat = *(new CMatrix(iRank, iRank));
   CVector& objVecB = *(new CVector(iRank));
+  CVector& objVecNewB = *(new CVector(iRank));
   CVector& objVecXGau = *(new CVector(iRank));
   CVector& objVecXLU = *(new CVector(iRank));
   CVector& objVecXJac = *(new CVector(iRank));
@@ -37,8 +38,12 @@ int main()
   objVecB(1) = 4;
   objVecB(2) = 5;
   objVecB(3) = -3;
+  objVecNewB(0) = 3;
+  objVecNewB(1) = 4;
+  objVecNewB(2) = 5;
+  objVecNewB(3) = -3;
   // Initialize GaussSolver
-  CGaussSolver *pobjGaussSolver = new CGaussSolver(objMat, objVecB);
+  ISolver* pobjGaussSolver = new CGaussSolver(objMat, objVecB);
   // Solve linear equation system by GaussSolver
   clock_t tBegin = clock();
   pobjGaussSolver->Solve(objVecXGau);
@@ -47,22 +52,23 @@ int main()
   objVecXGau.Print();
   std::cout << "\nTime: " << dInterval << "s"<< std::endl;
 
-//   // Initialize LUSolver
-//   CLUSolver *pobjLUSolver = new CLUSolver(objMat, objVecB);
-//   // Solve linear equation system by LUSolver
-//   tBegin = clock();
-//   pobjLUSolver->Solve();
-//   dInterval = double(clock() - tBegin) / 1000;
-//   std::cout << "\nLUSolver solution:" << std::endl;
-//   objVecXLU.Print();
-//   std::cout << "\nTime: " << dInterval << "s"<< std::endl;
+  // Initialize LUSolver
+  CLUSolver *pobjLUSolver = new CLUSolver(objMat, objVecB);
+  pobjLUSolver->SetDecomposeMethod("Gauss");
+  // Solve linear equation system by LUSolver
+  tBegin = clock();
+  pobjLUSolver->Solve(objVecXLU);
+  dInterval = double(clock() - tBegin) / 1000;
+  std::cout << "\nLUSolver solution:" << std::endl;
+  objVecXLU.Print();
+  std::cout << "\nTime: " << dInterval << "s"<< std::endl;
 
-//   tBegin = clock();
-//   pobjLUSolver->Solve();
-//   dInterval = double(clock() - tBegin) / 1000;
-//   std::cout << "\nLUSolver solution of new B:" << std::endl;
-//   objVecXLU.Print();
-//   std::cout << "\nTime: " << dInterval << "s\n"<< std::endl;
+  tBegin = clock();
+  pobjLUSolver->SolveNewB(objVecXLU, objVecB);
+  dInterval = double(clock() - tBegin) / 1000;
+  std::cout << "\nLUSolver solution of new B:" << std::endl;
+  objVecXLU.Print();
+  std::cout << "\nTime: " << dInterval << "s\n"<< std::endl;
 
 //   // Initialize JacobiSolver
 //   CVector& objVecInit = *(new CVector(4));

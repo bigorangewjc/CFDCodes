@@ -18,6 +18,7 @@ src/CMakeFiles/LIB_SRCS.dir/JacobiSolver.cpp.o
  ../include/Vector.h
  /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/JacobiSolver.cpp
 src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o
+ ../include/ISolver.h
  ../include/LUSolver.h
  ../include/Matrix.h
  ../include/Vector.h

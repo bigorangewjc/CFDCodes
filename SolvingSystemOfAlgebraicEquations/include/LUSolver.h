@@ -1,28 +1,26 @@
-#ifdef JCWANG
 #ifndef LU_SOLVER_H
 #define LU_SOLVER_H
-
+#include "ISolver.h"
 #include <string>
 
-class CVector;
 class CMatrix;
-class CLUSolver
+class CVector;
+class CLUSolver : public ISolver
 {
 public:
-    CLUSolver(CMatrix& objMatA, CVector& objVecB);
+    CLUSolver(const CMatrix &objMatA, const CVector &objVecB);
     virtual ~CLUSolver();
-    double* Solve(std::string sMethod = "Crout");
-    double* SolveNewB(CVector& objVecB);
+    void SetDecomposeMethod(std::string sMethod = "Crout");
+    virtual void Solve(CVector &objVecX);
+    void SolveNewB(CVector &objVecX, const CVector &objVecB);
 
 private:
     void LUFactorization();
     void LUFactorizationByGaussElimination();
     void ForwardSubstitution();
-    void BackwardSubstitution();
-    double** m_pdMatA;
-    double* m_pdVecB;
-    int m_iColumns;
-    int m_iRows;
+    void BackwardSubstitution(CVector &objVecX);
+
+private:
+    std::string m_sMethod;
 };
-#endif//LU_SOLVER_H
-#endif
+#endif //LU_SOLVER_H

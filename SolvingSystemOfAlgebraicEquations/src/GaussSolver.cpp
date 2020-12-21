@@ -14,7 +14,6 @@ CGaussSolver::~CGaussSolver()
 
 void CGaussSolver::Solve(CVector &objVecX)
 {
-    m_objMat.Print();
     // Forward elimination
     // Complexity: (N-1)*(N-i)*(N-i+1), i = 1,...,N-1
     // Elimilate the iColElim-th variable of X for rows below row iColElim of matrix A
@@ -35,13 +34,13 @@ void CGaussSolver::Solve(CVector &objVecX)
             m_objVecB(iRow) -= dRatio * m_objVecB(iColElim);
         }
     }
-    m_objMat.Print();
     // Backward substitution
     objVecX(m_iRows - 1) =
         m_objVecB(m_iRows - 1) / m_objMat(m_iRows - 1, m_iCols - 1);
+    double dSum = 0;
     for (int iRow = m_iRows - 2; iRow >= 0; iRow--)
     {
-        double dSum = 0;
+        dSum = 0;
         for (int iCol = iRow + 1; iCol < m_iCols; iCol++)
         {
             dSum += m_objMat(iRow, iCol) * objVecX(iCol);
