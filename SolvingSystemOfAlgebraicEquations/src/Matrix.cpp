@@ -90,7 +90,7 @@ inline double &CMatrix::operator()(const int iRow, const int iCol) const
     return m_pdMat[iRow][iCol];
 }
 
-void CMatrix::Print()
+void CMatrix::Print() const
 {
     using namespace std;
     if (nullptr == m_pdMat)

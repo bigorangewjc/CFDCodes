@@ -12,7 +12,7 @@ public:
   inline int GetNumCols() const;
   inline int GetNumRows() const;
   inline double& operator()(const int iRow, const int iCol) const;
-  void Print();
+  void Print() const;
 
 private:
   int m_iCols;
