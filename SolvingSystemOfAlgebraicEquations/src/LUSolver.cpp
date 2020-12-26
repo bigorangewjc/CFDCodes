@@ -3,10 +3,19 @@
 #include "Matrix.h"
 #include "Vector.h"
 
-CLUSolver::CLUSolver(const CMatrix &objMatA, const CVector &objVecB)
-    : ISolver::ISolver(objMatA, objVecB)
+CLUSolver::CLUSolver(const CMatrix &objMat, const CVector &objVecB)
+    : m_iRows(objVecB.GetNumRows())
+    , m_iCols(objMat.GetNumCols())
+    , m_objMat(*(new CMatrix(objMat)))
+    , m_objVecB(*(new CVector(objVecB)))
     , m_sMethod("Crout")
 {
+    if (m_iRows != m_iCols)
+    {
+        std::cout << "Matrix's column number " << m_iCols
+                  << " is not equal to B's row number " << m_iRows << std::endl;
+        abort();
+    }
 }
 
 CLUSolver::~CLUSolver()
@@ -50,7 +59,6 @@ void CLUSolver::SolveNewB(CVector &objVecX, const CVector &objVecB)
     for (int iRow = 0; iRow < m_iRows; iRow++)
     {
         m_objVecB(iRow) = objVecB(iRow);
-        std::cout << objVecB(iRow) << std::endl;
     }
     ForwardSubstitution();
     BackwardSubstitution(objVecX);

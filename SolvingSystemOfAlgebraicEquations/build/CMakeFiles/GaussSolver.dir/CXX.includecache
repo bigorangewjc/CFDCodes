@@ -13,6 +13,8 @@ ISolver.h
 ../include/ISolver.h
 
 ../include/JacobiSolver.h
+ISolver.h
+../include/ISolver.h
 
 ../include/LUSolver.h
 ISolver.h
@@ -21,8 +23,20 @@ string
 -
 
 ../include/Matrix.h
+MatrixI.h
+../include/MatrixI.h
+
+../include/MatrixI.h
+iostream
+-
 
 ../include/Vector.h
+VectorI.h
+../include/VectorI.h
+
+../include/VectorI.h
+iostream
+-
 
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/main.cpp
 iostream

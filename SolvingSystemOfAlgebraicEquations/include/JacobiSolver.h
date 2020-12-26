@@ -1,29 +1,26 @@
-#ifdef JCWANG
 #ifndef JACOBI_SOLVER_H
 #define JACOBI_SOLVER_H
 
+#include "ISolver.h"
+
 class CVector;
 class CMatrix;
-class CJacobiSolver
+class CJacobiSolver : ISolver
 {
 public:
-  CJacobiSolver(
-      CMatrix& objMatA, CVector& objVecB,
-       CVector& objVecInit, const double& dThreshold);
-  virtual ~CJacobiSolver();
-  void SetNewThreshold(const double& dThreshold);
-  void SetNewMatA(CMatrix& objMatA);
-  void SetNewVecB(CVector& objVecB);
-  CVector* Solve();
+    CJacobiSolver(const CMatrix &objMat, const CVector &objVecB);
+    virtual ~CJacobiSolver();
+    void SetInitVec(const CVector &objVecInit);
+    void SetTol(const double &dTol);
+    virtual void Solve(CVector &objVecX);
+
 private:
-  CVector* pobjVecX;
-  double m_dThreshold;
-  double** m_pdMatA;
-  double* m_pdVecB;
-  double* m_pdVecX;
-  double* m_pdVecXPrev;
-  int m_iColumns;
-  int m_iRows;
+    double m_dTol;
+    int m_iRows;
+    int m_iCols;
+    const CMatrix &m_objMat;
+    const CVector &m_objVecB;
+    CVector &m_objVecXPrev;
 };
-#endif//JACOBI_SOLVER_H
-#endif
+
+#endif //JACOBI_SOLVER_H

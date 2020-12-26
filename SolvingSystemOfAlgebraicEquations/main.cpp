@@ -70,17 +70,18 @@ int main()
   objVecXLU.Print();
   std::cout << "\nTime: " << dInterval << "s\n"<< std::endl;
 
-//   // Initialize JacobiSolver
-//   CVector& objVecInit = *(new CVector(4));
-//   CJacobiSolver *pobjJacobiSolver = new CJacobiSolver(
-//     objMat, objVecB, objVecInit, 1.0e-5);
-//   // Solve linear equation system by JacobiSolver
-//   tBegin = clock();
-//   pobjJacobiSolver->Solve();
-//   dInterval = double(clock() - tBegin) / 1000;
-//   std::cout << "\nJacobiSolver solution:" << std::endl;
-//   objVecXJac.Print();
-//   std::cout << "\nTime: " << dInterval << "s"<< std::endl;
+  // Initialize JacobiSolver
+  CVector& objVecInit = *(new CVector(4));
+  CJacobiSolver *pobjJacobiSolver = new CJacobiSolver(objMat, objVecB);
+  pobjJacobiSolver->SetTol(1.0e-5);
+  pobjJacobiSolver->SetInitVec(objVecInit);
+  // Solve linear equation system by JacobiSolver
+  tBegin = clock();
+  pobjJacobiSolver->Solve(objVecXJac);
+  dInterval = double(clock() - tBegin) / 1000;
+  std::cout << "\nJacobiSolver solution:" << std::endl;
+  objVecXJac.Print();
+  std::cout << "\nTime: " << dInterval << "s"<< std::endl;
 
   return 0;
 };

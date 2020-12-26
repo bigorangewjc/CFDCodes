@@ -7,5 +7,7 @@ CMakeFiles/GaussSolver.dir/main.cpp.o
  ../include/JacobiSolver.h
  ../include/LUSolver.h
  ../include/Matrix.h
+ ../include/MatrixI.h
  ../include/Vector.h
+ ../include/VectorI.h
  /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/main.cpp

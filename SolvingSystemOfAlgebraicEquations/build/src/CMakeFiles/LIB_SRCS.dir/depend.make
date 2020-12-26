@@ -4,28 +4,32 @@
 src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o: ../include/GaussSolver.h
 src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o: ../include/ISolver.h
 src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o: ../include/Matrix.h
+src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o: ../include/MatrixI.h
 src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o: ../include/Vector.h
+src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o: ../include/VectorI.h
 src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o: ../src/GaussSolver.cpp
 
-src/CMakeFiles/LIB_SRCS.dir/ISolver.cpp.o: ../include/ISolver.h
-src/CMakeFiles/LIB_SRCS.dir/ISolver.cpp.o: ../include/Matrix.h
-src/CMakeFiles/LIB_SRCS.dir/ISolver.cpp.o: ../include/Vector.h
-src/CMakeFiles/LIB_SRCS.dir/ISolver.cpp.o: ../src/ISolver.cpp
-
+src/CMakeFiles/LIB_SRCS.dir/JacobiSolver.cpp.o: ../include/ISolver.h
 src/CMakeFiles/LIB_SRCS.dir/JacobiSolver.cpp.o: ../include/JacobiSolver.h
 src/CMakeFiles/LIB_SRCS.dir/JacobiSolver.cpp.o: ../include/Matrix.h
+src/CMakeFiles/LIB_SRCS.dir/JacobiSolver.cpp.o: ../include/MatrixI.h
 src/CMakeFiles/LIB_SRCS.dir/JacobiSolver.cpp.o: ../include/Vector.h
+src/CMakeFiles/LIB_SRCS.dir/JacobiSolver.cpp.o: ../include/VectorI.h
 src/CMakeFiles/LIB_SRCS.dir/JacobiSolver.cpp.o: ../src/JacobiSolver.cpp
 
 src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o: ../include/ISolver.h
 src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o: ../include/LUSolver.h
 src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o: ../include/Matrix.h
+src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o: ../include/MatrixI.h
 src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o: ../include/Vector.h
+src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o: ../include/VectorI.h
 src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o: ../src/LUSolver.cpp
 
 src/CMakeFiles/LIB_SRCS.dir/Matrix.cpp.o: ../include/Matrix.h
+src/CMakeFiles/LIB_SRCS.dir/Matrix.cpp.o: ../include/MatrixI.h
 src/CMakeFiles/LIB_SRCS.dir/Matrix.cpp.o: ../src/Matrix.cpp
 
 src/CMakeFiles/LIB_SRCS.dir/Vector.cpp.o: ../include/Vector.h
+src/CMakeFiles/LIB_SRCS.dir/Vector.cpp.o: ../include/VectorI.h
 src/CMakeFiles/LIB_SRCS.dir/Vector.cpp.o: ../src/Vector.cpp
 

@@ -7,11 +7,12 @@ public:
   CMatrix(int iRows, int iCols);
   CMatrix(const CMatrix &objMat);
   virtual ~CMatrix();
-  // Const object can only call const member functions or member variables
+  // Const object can only call const member functions or const member variables
   inline double** GetMat() const;
   inline int GetNumCols() const;
   inline int GetNumRows() const;
-  inline double& operator()(const int iRow, const int iCol) const;
+  inline double& operator()(const int iRow, const int iCol);
+  inline const double& operator()(const int iRow, const int iCol) const;
   void Print() const;
 
 private:
@@ -19,4 +20,7 @@ private:
   int m_iRows;
   double **m_pdMat;
 };
+
+#include "MatrixI.h"
+
 #endif //MATRIX_H

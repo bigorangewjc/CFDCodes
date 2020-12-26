@@ -6,6 +6,8 @@ CMakeFiles/GaussSolver.dir/main.cpp.o: ../include/ISolver.h
 CMakeFiles/GaussSolver.dir/main.cpp.o: ../include/JacobiSolver.h
 CMakeFiles/GaussSolver.dir/main.cpp.o: ../include/LUSolver.h
 CMakeFiles/GaussSolver.dir/main.cpp.o: ../include/Matrix.h
+CMakeFiles/GaussSolver.dir/main.cpp.o: ../include/MatrixI.h
 CMakeFiles/GaussSolver.dir/main.cpp.o: ../include/Vector.h
+CMakeFiles/GaussSolver.dir/main.cpp.o: ../include/VectorI.h
 CMakeFiles/GaussSolver.dir/main.cpp.o: ../main.cpp
 

@@ -3,13 +3,24 @@
 #include "Matrix.h"
 #include "Vector.h"
 
-CGaussSolver::CGaussSolver(const CMatrix &objMatA, const CVector &objVecB)
-    : ISolver::ISolver(objMatA, objVecB)
+CGaussSolver::CGaussSolver(const CMatrix &objMat, const CVector &objVecB)
+    : m_iRows(objVecB.GetNumRows())
+    , m_iCols(objMat.GetNumCols())
+    , m_objMat(*(new CMatrix(objMat)))
+    , m_objVecB(*(new CVector(objVecB)))
 {
+    if (m_iRows != m_iCols)
+    {
+        std::cout << "Matrix's column number " << m_iCols
+                  << " is not equal to B's row number " << m_iRows << std::endl;
+        abort();
+    }
 }
 
 CGaussSolver::~CGaussSolver()
 {
+    delete &m_objMat;
+    delete &m_objVecB;
 }
 
 void CGaussSolver::Solve(CVector &objVecX)

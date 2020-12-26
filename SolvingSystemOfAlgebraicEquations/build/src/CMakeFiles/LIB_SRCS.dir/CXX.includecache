@@ -15,8 +15,20 @@ string
 -
 
 ../include/Matrix.h
+MatrixI.h
+../include/MatrixI.h
+
+../include/MatrixI.h
+iostream
+-
 
 ../include/Vector.h
+VectorI.h
+../include/VectorI.h
+
+../include/VectorI.h
+iostream
+-
 
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/LUSolver.cpp
 LUSolver.h

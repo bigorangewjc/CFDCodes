@@ -1,109 +1,77 @@
-#ifdef JCWANG
 #include "JacobiSolver.h"
 #include <cmath>
 #include <iostream>
 #include "Matrix.h"
 #include "Vector.h"
 
-CJacobiSolver::CJacobiSolver(
-    CMatrix& objMatA, CVector& objVecB,
-    CVector& objVecInit, const double& dThreshold)
-  : m_pdMatA(objMatA.GetMat()) 
-  , m_pdVecB(objVecB.GetVector())
-  , m_pdVecXPrev(objVecInit.GetVector())
-  , m_iRows(objVecB.GetNumRows())
-  , m_iColumns(objMatA.GetNumCols())
-  , m_dThreshold(dThreshold)
+CJacobiSolver::CJacobiSolver(const CMatrix &objMat, const CVector &objVecB)
+    : m_iRows(objVecB.GetNumRows())
+    , m_iCols(objMat.GetNumCols())
+    , m_objMat(*(new CMatrix(objMat)))
+    , m_objVecB(*(new CVector(objVecB)))
+    , m_objVecXPrev(*(new CVector(m_iRows)))
 {
-  if (m_iRows != m_iColumns)
-  {
-    std::cout << "A's column number " << m_iColumns
-      << " is not equal to B's row number " << m_iRows << std::endl;
-    abort();
-  }
-  if (nullptr == m_pdMatA)
-  {
-    std::cout << "Matrix A is NULL" << std::endl;
-    abort();
-  }
-  if (nullptr == m_pdVecB)
-  {
-    std::cout << "Vector B is NULL" << std::endl;
-    abort();
-  }
-  if (nullptr == m_pdVecXPrev)
-  {
-    std::cout << "Initial vector is NULL" << std::endl;
-    abort();
-  }
-  pobjVecX = new CVector(m_iRows);
-  m_pdVecX = pobjVecX->GetVector();
+    if (m_iRows != m_iCols)
+    {
+        std::cout << "Matrix's column number " << m_iCols
+                  << " is not equal to B's row number " << m_iRows << std::endl;
+        abort();
+    }
 }
 CJacobiSolver::~CJacobiSolver()
 {
-
 }
-CVector* CJacobiSolver::Solve()
+void CJacobiSolver::SetTol(const double &dTol)
 {
-  int iIter = 1;
-  double dError = 0.0;
-  while (1 == iIter || dError > m_dThreshold)
-  {
-    // Calculate new estimates
+    m_dTol = dTol;
+}
+void CJacobiSolver::SetInitVec(const CVector &objVecInit)
+{
+    if (m_iCols != objVecInit.GetNumRows())
+    {
+        std::cout << "A's column number " << m_iCols
+                  << " is not equal to new B's row number " << m_iRows << std::endl;
+        abort();
+    }
     for (int iI = 0; iI < m_iRows; iI++)
     {
-        m_pdVecX[iI] = m_pdVecB[iI];
-        for (int iJ = 0; iJ < m_iColumns; iJ++)
-        {
-            if (iI != iJ)
-            {
-                m_pdVecX[iI] -= m_pdMatA[iI][iJ] * m_pdVecXPrev[iJ]; 
-            }
-        }
-        m_pdVecX[iI] /= m_pdMatA[iI][iI];
+        m_objVecXPrev(iI) = objVecInit(iI);
     }
-    // Calculate maximum normalized difference between
-    //   two consecutive iteration estimates
-    double dTmp = 0.0;
-    dError = fabs(m_pdVecX[0] - m_pdVecXPrev[0]);
-    m_pdVecXPrev[0] = m_pdVecX[0];
-    for (int iI = 1; iI < m_iRows; iI++)
+}
+void CJacobiSolver::Solve(CVector &objVecX)
+{
+    int iIter = 1;
+    double dError = 0.0;
+    while (1 == iIter || dError > m_dTol)
     {
-        dTmp = fabs(m_pdVecX[iI] - m_pdVecXPrev[iI]);
-        if (dError < dTmp)
+        // Calculate new estimates
+        for (int iI = 0; iI < m_iRows; iI++)
         {
-            dError = dTmp;
+            objVecX(iI) = m_objVecB(iI);
+            for (int iJ = 0; iJ < m_iCols; iJ++)
+            {
+                if (iI != iJ)
+                {
+                    objVecX(iI) -= m_objMat(iI, iJ) * m_objVecXPrev(iJ);
+                }
+            }
+            objVecX(iI) /= m_objMat(iI, iI);
         }
-        m_pdVecXPrev[iI] = m_pdVecX[iI];
+        // Calculate maximum normalized difference between
+        //   two consecutive iteration estimates
+        double dTmp = 0.0;
+        dError = fabs(objVecX(0) - m_objVecXPrev(0));
+        m_objVecXPrev(0) = objVecX(0);
+        for (int iI = 1; iI < m_iRows; iI++)
+        {
+            dTmp = fabs(objVecX(iI) - m_objVecXPrev(iI));
+            if (dError < dTmp)
+            {
+                dError = dTmp;
+            }
+            m_objVecXPrev(iI) = objVecX(iI);
+        }
+        std::cout << "iIter = " << iIter << ", dError = " << dError << std::endl;
+        iIter++;
     }
-    std::cout << "iIter = " << iIter << ", dError = " << dError << std::endl;
-    iIter++;
-  }
-  return pobjVecX;
 }
-void CJacobiSolver::SetNewThreshold(const double& dThreshold)
-{
-    m_dThreshold = dThreshold;
-}
-void CJacobiSolver::SetNewMatA(CMatrix& objMatA)
-{
-  if (objMatA.GetNumRows() != objMatA.GetNumCols())
-  {
-    std::cout << "New matrix A is not a square matrix" << std::endl;
-    abort();
-  }
-  m_pdMatA = objMatA.GetMat();
-  m_iRows = objMatA.GetNumRows();
-  m_iColumns = objMatA.GetNumCols();
-}
-void CJacobiSolver::SetNewVecB(CVector& objVecB)
-{
-  if (m_iColumns != objVecB.GetNumRows())
-  {
-    std::cout << "A's column number " << m_iColumns
-      << " is not equal to new B's row number " << m_iRows << std::endl;
-    abort();
-  }
-  m_pdVecB = objVecB.GetVector();
-}
-#endif
