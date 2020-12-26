@@ -10,9 +10,9 @@ class CLUSolver : public ISolver
 public:
     CLUSolver(const CMatrix &objMat, const CVector &objVecB);
     virtual ~CLUSolver();
-    void SetDecomposeMethod(std::string sMethod = "Crout");
+    virtual void SetDecomposeMethod(std::string sMethod = "Crout");
     virtual void Solve(CVector &objVecX);
-    void SolveNewB(CVector &objVecX, const CVector &objVecB);
+    virtual void SolveNewB(CVector &objVecX, const CVector &objVecB);
 
 private:
     void LUFactorization();

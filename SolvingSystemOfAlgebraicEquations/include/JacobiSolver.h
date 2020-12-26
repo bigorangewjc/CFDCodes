@@ -5,13 +5,13 @@
 
 class CVector;
 class CMatrix;
-class CJacobiSolver : ISolver
+class CJacobiSolver : public ISolver
 {
 public:
     CJacobiSolver(const CMatrix &objMat, const CVector &objVecB);
     virtual ~CJacobiSolver();
-    void SetInitVec(const CVector &objVecInit);
-    void SetTol(const double &dTol);
+    virtual void SetInitVec(const CVector &objVecInit);
+    virtual void SetTol(const double &dTol);
     virtual void Solve(CVector &objVecX);
 
 private:

@@ -56,7 +56,7 @@ int main()
     std::cout << "\nTime: " << dInterval << "s" << std::endl;
 
     // Initialize LUSolver
-    CLUSolver *pobjLUSolver = new CLUSolver(objMat, objVecB);
+    ISolver *pobjLUSolver = new CLUSolver(objMat, objVecB);
     pobjLUSolver->SetDecomposeMethod("Gauss");
     // Solve linear equation system by LUSolver
     tBegin = clock();
@@ -75,7 +75,7 @@ int main()
               << std::endl;
 
     // Initialize JacobiSolver
-    CJacobiSolver *pobjJacobiSolver = new CJacobiSolver(objMat, objVecB);
+    ISolver *pobjJacobiSolver = new CJacobiSolver(objMat, objVecB);
     pobjJacobiSolver->SetTol(1.0e-7);
     pobjJacobiSolver->SetInitVec(objVecInit);
     // Solve linear equation system by JacobiSolver
@@ -84,10 +84,10 @@ int main()
     dInterval = double(clock() - tBegin) / 1000;
     std::cout << "\nJacobiSolver solution:" << std::endl;
     objVecXJac.Print();
-    std::cout << "\nTime: " << dInterval << "s" << std::endl;
+    std::cout << "\nTime: " << dInterval << "s\n" << std::endl;
 
     // Initialize GaussSeidelSolver
-    CGaussSeidelSolver *pobjGaussSeidelSolver =
+    ISolver *pobjGaussSeidelSolver =
         new CGaussSeidelSolver(objMat, objVecB);
     pobjGaussSeidelSolver->SetTol(1.0e-5);
     pobjGaussSeidelSolver->SetInitVec(objVecInit);
@@ -97,7 +97,7 @@ int main()
     dInterval = double(clock() - tBegin) / 1000;
     std::cout << "\nGaussSeidelSolver solution:" << std::endl;
     objVecXGS.Print();
-    std::cout << "\nTime: " << dInterval << "s" << std::endl;
+    std::cout << "\nTime: " << dInterval << "s\n" << std::endl;
 
     return 0;
 };

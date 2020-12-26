@@ -10,11 +10,23 @@
 ISolver.h
 ../include/ISolver.h
 
+../include/GaussSolver.h
+ISolver.h
 ../include/ISolver.h
+
+../include/ISolver.h
+string
+-
 
 ../include/JacobiSolver.h
 ISolver.h
 ../include/ISolver.h
+
+../include/LUSolver.h
+ISolver.h
+../include/ISolver.h
+string
+-
 
 ../include/Matrix.h
 MatrixI.h
@@ -44,11 +56,31 @@ Matrix.h
 Vector.h
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Vector.h
 
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/GaussSolver.cpp
+GaussSolver.h
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/GaussSolver.h
+iostream
+-
+Matrix.h
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Matrix.h
+Vector.h
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Vector.h
+
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/JacobiSolver.cpp
 JacobiSolver.h
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/JacobiSolver.h
 cmath
 -
+iostream
+-
+Matrix.h
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Matrix.h
+Vector.h
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Vector.h
+
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/LUSolver.cpp
+LUSolver.h
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/LUSolver.h
 iostream
 -
 Matrix.h

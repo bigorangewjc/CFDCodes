@@ -5,13 +5,13 @@
 
 class CVector;
 class CMatrix;
-class CGaussSeidelSolver : ISolver
+class CGaussSeidelSolver : public ISolver
 {
 public:
     CGaussSeidelSolver(const CMatrix &objMat, const CVector &objVecB);
     virtual ~CGaussSeidelSolver();
-    void SetInitVec(const CVector &objVecInit);
-    void SetTol(const double &dTol);
+    virtual void SetInitVec(const CVector &objVecInit);
+    virtual void SetTol(const double &dTol);
     virtual void Solve(CVector &objVecX);
 
 private:
