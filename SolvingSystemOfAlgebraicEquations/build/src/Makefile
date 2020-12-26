@@ -145,6 +145,33 @@ LIB_SRCS/fast:
 	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LIB_SRCS.dir/build.make src/CMakeFiles/LIB_SRCS.dir/build
 .PHONY : LIB_SRCS/fast
 
+GaussSeidelSolver.o: GaussSeidelSolver.cpp.o
+
+.PHONY : GaussSeidelSolver.o
+
+# target to build an object file
+GaussSeidelSolver.cpp.o:
+	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LIB_SRCS.dir/build.make src/CMakeFiles/LIB_SRCS.dir/GaussSeidelSolver.cpp.o
+.PHONY : GaussSeidelSolver.cpp.o
+
+GaussSeidelSolver.i: GaussSeidelSolver.cpp.i
+
+.PHONY : GaussSeidelSolver.i
+
+# target to preprocess a source file
+GaussSeidelSolver.cpp.i:
+	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LIB_SRCS.dir/build.make src/CMakeFiles/LIB_SRCS.dir/GaussSeidelSolver.cpp.i
+.PHONY : GaussSeidelSolver.cpp.i
+
+GaussSeidelSolver.s: GaussSeidelSolver.cpp.s
+
+.PHONY : GaussSeidelSolver.s
+
+# target to generate assembly for a file
+GaussSeidelSolver.cpp.s:
+	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LIB_SRCS.dir/build.make src/CMakeFiles/LIB_SRCS.dir/GaussSeidelSolver.cpp.s
+.PHONY : GaussSeidelSolver.cpp.s
+
 GaussSolver.o: GaussSolver.cpp.o
 
 .PHONY : GaussSolver.o
@@ -289,6 +316,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... LIB_SRCS"
+	@echo "... GaussSeidelSolver.o"
+	@echo "... GaussSeidelSolver.i"
+	@echo "... GaussSeidelSolver.s"
 	@echo "... GaussSolver.o"
 	@echo "... GaussSolver.i"
 	@echo "... GaussSolver.s"

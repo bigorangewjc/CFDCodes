@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../include/GaussSolver.h
+../include/GaussSeidelSolver.h
 ISolver.h
 ../include/ISolver.h
 
@@ -15,12 +15,6 @@ ISolver.h
 ../include/JacobiSolver.h
 ISolver.h
 ../include/ISolver.h
-
-../include/LUSolver.h
-ISolver.h
-../include/ISolver.h
-string
--
 
 ../include/Matrix.h
 MatrixI.h
@@ -38,9 +32,11 @@ VectorI.h
 iostream
 -
 
-/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/GaussSolver.cpp
-GaussSolver.h
-/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/GaussSolver.h
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/GaussSeidelSolver.cpp
+GaussSeidelSolver.h
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/GaussSeidelSolver.h
+cmath
+-
 iostream
 -
 Matrix.h
@@ -59,20 +55,4 @@ Matrix.h
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Matrix.h
 Vector.h
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Vector.h
-
-/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/LUSolver.cpp
-LUSolver.h
-/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/LUSolver.h
-iostream
--
-Matrix.h
-/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Matrix.h
-Vector.h
-/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Vector.h
-
-/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Matrix.cpp
-Matrix.h
-/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Matrix.h
-iostream
--
 

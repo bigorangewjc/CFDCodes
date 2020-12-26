@@ -6,6 +6,11 @@
 },
 {
   "directory": "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src",
+  "command": "/usr/bin/g++   -I/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/include  -g   -o CMakeFiles/LIB_SRCS.dir/GaussSeidelSolver.cpp.o -c /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/GaussSeidelSolver.cpp",
+  "file": "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/GaussSeidelSolver.cpp"
+},
+{
+  "directory": "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src",
   "command": "/usr/bin/g++   -I/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/include  -g   -o CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o -c /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/GaussSolver.cpp",
   "file": "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/GaussSolver.cpp"
 },

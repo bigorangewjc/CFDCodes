@@ -1,10 +1,10 @@
-#include "JacobiSolver.h"
+#include "GaussSeidelSolver.h"
 #include <cmath>
 #include <iostream>
 #include "Matrix.h"
 #include "Vector.h"
 
-CJacobiSolver::CJacobiSolver(const CMatrix &objMat, const CVector &objVecB)
+CGaussSeidelSolver::CGaussSeidelSolver(const CMatrix &objMat, const CVector &objVecB)
     : m_iRows(objVecB.GetNumRows())
     , m_iCols(objMat.GetNumCols())
     , m_objMat(*(new CMatrix(objMat)))
@@ -18,14 +18,14 @@ CJacobiSolver::CJacobiSolver(const CMatrix &objMat, const CVector &objVecB)
         abort();
     }
 }
-CJacobiSolver::~CJacobiSolver()
+CGaussSeidelSolver::~CGaussSeidelSolver()
 {
 }
-void CJacobiSolver::SetTol(const double &dTol)
+void CGaussSeidelSolver::SetTol(const double &dTol)
 {
     m_dTol = dTol;
 }
-void CJacobiSolver::SetInitVec(const CVector &objVecInit)
+void CGaussSeidelSolver::SetInitVec(const CVector &objVecInit)
 {
     if (m_iCols != objVecInit.GetNumRows())
     {
@@ -38,11 +38,11 @@ void CJacobiSolver::SetInitVec(const CVector &objVecInit)
         m_objVecXPrev(iI) = objVecInit(iI);
     }
 }
-void CJacobiSolver::Solve(CVector &objVecX)
+void CGaussSeidelSolver::Solve(CVector &objVecX)
 {
     int iIter = 1;
     double dError = 0.0;
-    std::cout << "Jacobi iteration:" << std::endl;
+    std::cout << "Gauss-Seidel iteration:" << std::endl;
     while (1 == iIter || dError > m_dTol)
     {
         // Calculate new estimates
@@ -51,7 +51,13 @@ void CJacobiSolver::Solve(CVector &objVecX)
             objVecX(iI) = m_objVecB(iI);
             for (int iJ = 0; iJ < m_iCols; iJ++)
             {
-                if (iI != iJ)
+                // Use latest available estimates
+                if (iI > iJ)
+                {
+                    objVecX(iI) -= m_objMat(iI, iJ) * objVecX(iJ);
+                }
+                // Use previous estimates
+                if (iI < iJ)
                 {
                     objVecX(iI) -= m_objMat(iI, iJ) * m_objVecXPrev(iJ);
                 }

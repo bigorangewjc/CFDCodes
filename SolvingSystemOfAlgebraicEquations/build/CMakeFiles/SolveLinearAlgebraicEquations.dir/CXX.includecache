@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../include/GaussSeidelSolver.h
+ISolver.h
+../include/ISolver.h
+
 ../include/GaussSolver.h
 ISolver.h
 ../include/ISolver.h
@@ -45,6 +49,8 @@ ctime
 -
 ISolver.h
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/ISolver.h
+GaussSeidelSolver.h
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/GaussSeidelSolver.h
 GaussSolver.h
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/GaussSolver.h
 JacobiSolver.h
