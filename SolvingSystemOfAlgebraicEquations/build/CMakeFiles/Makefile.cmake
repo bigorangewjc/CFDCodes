@@ -47,6 +47,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/GaussSolver.dir/DependInfo.cmake"
+  "CMakeFiles/SolveLinearAlgebraicEquations.dir/DependInfo.cmake"
   "src/CMakeFiles/LIB_SRCS.dir/DependInfo.cmake"
   )

@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/Solve.dir/main.cpp.o  -o ../bin/Solve  src/libLIB_SRCS.a 

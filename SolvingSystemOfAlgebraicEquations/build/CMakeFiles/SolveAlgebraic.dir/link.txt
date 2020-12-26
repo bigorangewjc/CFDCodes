@@ -1,0 +1,1 @@
+/usr/bin/g++  -g  -rdynamic CMakeFiles/SolveAlgebraic.dir/main.cpp.o  -o ../bin/SolveAlgebraic  src/libLIB_SRCS.a 

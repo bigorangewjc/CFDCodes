@@ -851,7 +851,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "GaussSolver"
+			"value" : "SolveLinearAlgebraicEquations"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1147,6 +1147,174 @@
 		},
 		{
 			"name" : "GaussSolver_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations"
+		},
+		{
+			"name" : "SolveAlgebra_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build"
+		},
+		{
+			"name" : "SolveAlgebra_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations"
+		},
+		{
+			"name" : "SolveAlgebraicEquation_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build"
+		},
+		{
+			"name" : "SolveAlgebraicEquation_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations"
+		},
+		{
+			"name" : "SolveAlgebraic_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build"
+		},
+		{
+			"name" : "SolveAlgebraic_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations"
+		},
+		{
+			"name" : "SolveLinearAlgebraicEquation_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build"
+		},
+		{
+			"name" : "SolveLinearAlgebraicEquation_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations"
+		},
+		{
+			"name" : "SolveLinearAlgebraicEquations_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build"
+		},
+		{
+			"name" : "SolveLinearAlgebraicEquations_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations"
+		},
+		{
+			"name" : "SolveLinewAlgebraicEquation_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build"
+		},
+		{
+			"name" : "SolveLinewAlgebraicEquation_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations"
+		},
+		{
+			"name" : "Solve_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build"
+		},
+		{
+			"name" : "Solve_SOURCE_DIR",
 			"properties" : 
 			[
 				{

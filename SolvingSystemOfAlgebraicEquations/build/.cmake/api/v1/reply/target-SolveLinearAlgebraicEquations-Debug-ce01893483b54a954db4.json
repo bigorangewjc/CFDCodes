@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/bin/GaussSolver"
+			"path" : "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/bin/SolveLinearAlgebraicEquations"
 		}
 	],
 	"backtrace" : 1,
@@ -73,7 +73,7 @@
 			"id" : "LIB_SRCS::@145eef247bfb46b6828c"
 		}
 	],
-	"id" : "GaussSolver::@6890427a1f51a3e7e1df",
+	"id" : "SolveLinearAlgebraicEquations::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -94,8 +94,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "GaussSolver",
-	"nameOnDisk" : "GaussSolver",
+	"name" : "SolveLinearAlgebraicEquations",
+	"nameOnDisk" : "SolveLinearAlgebraicEquations",
 	"paths" : 
 	{
 		"build" : ".",

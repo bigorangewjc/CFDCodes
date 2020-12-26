@@ -18,7 +18,7 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						1
 					]
 				},
 				{
@@ -32,7 +32,7 @@
 					"source" : "src",
 					"targetIndexes" : 
 					[
-						1
+						0
 					]
 				}
 			],
@@ -45,7 +45,7 @@
 						0,
 						1
 					],
-					"name" : "GaussSolver",
+					"name" : "SolveLinearAlgebraicEquations",
 					"targetIndexes" : 
 					[
 						0,
@@ -56,17 +56,17 @@
 			"targets" : 
 			[
 				{
-					"directoryIndex" : 0,
-					"id" : "GaussSolver::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-GaussSolver-Debug-f669fd588dbc03a0dd92.json",
-					"name" : "GaussSolver",
-					"projectIndex" : 0
-				},
-				{
 					"directoryIndex" : 1,
 					"id" : "LIB_SRCS::@145eef247bfb46b6828c",
 					"jsonFile" : "target-LIB_SRCS-Debug-903df9e42ce716902ba3.json",
 					"name" : "LIB_SRCS",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SolveLinearAlgebraicEquations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SolveLinearAlgebraicEquations-Debug-ce01893483b54a954db4.json",
+					"name" : "SolveLinearAlgebraicEquations",
 					"projectIndex" : 0
 				}
 			]

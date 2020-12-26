@@ -1,6 +1,6 @@
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles/rebuild_cache.dir
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles/edit_cache.dir
-/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles/GaussSolver.dir
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles/SolveLinearAlgebraicEquations.dir
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src/CMakeFiles/rebuild_cache.dir
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src/CMakeFiles/edit_cache.dir
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src/CMakeFiles/LIB_SRCS.dir

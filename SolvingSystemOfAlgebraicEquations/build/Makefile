@@ -131,17 +131,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named GaussSolver
+# Target rules for targets named SolveLinearAlgebraicEquations
 
 # Build rule for target.
-GaussSolver: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GaussSolver
-.PHONY : GaussSolver
+SolveLinearAlgebraicEquations: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SolveLinearAlgebraicEquations
+.PHONY : SolveLinearAlgebraicEquations
 
 # fast build rule for target.
-GaussSolver/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaussSolver.dir/build.make CMakeFiles/GaussSolver.dir/build
-.PHONY : GaussSolver/fast
+SolveLinearAlgebraicEquations/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SolveLinearAlgebraicEquations.dir/build.make CMakeFiles/SolveLinearAlgebraicEquations.dir/build
+.PHONY : SolveLinearAlgebraicEquations/fast
 
 #=============================================================================
 # Target rules for targets named LIB_SRCS
@@ -162,7 +162,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaussSolver.dir/build.make CMakeFiles/GaussSolver.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SolveLinearAlgebraicEquations.dir/build.make CMakeFiles/SolveLinearAlgebraicEquations.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -171,7 +171,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaussSolver.dir/build.make CMakeFiles/GaussSolver.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SolveLinearAlgebraicEquations.dir/build.make CMakeFiles/SolveLinearAlgebraicEquations.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -180,7 +180,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/GaussSolver.dir/build.make CMakeFiles/GaussSolver.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SolveLinearAlgebraicEquations.dir/build.make CMakeFiles/SolveLinearAlgebraicEquations.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -191,8 +191,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... GaussSolver"
 	@echo "... LIB_SRCS"
+	@echo "... SolveLinearAlgebraicEquations"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
