@@ -183,6 +183,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SolveLinearAlgebraicEquations.dir/build.make CMakeFiles/SolveLinearAlgebraicEquations.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+main_AdvectionDiffusion.o: main_AdvectionDiffusion.cpp.o
+
+.PHONY : main_AdvectionDiffusion.o
+
+# target to build an object file
+main_AdvectionDiffusion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SolveLinearAlgebraicEquations.dir/build.make CMakeFiles/SolveLinearAlgebraicEquations.dir/main_AdvectionDiffusion.cpp.o
+.PHONY : main_AdvectionDiffusion.cpp.o
+
+main_AdvectionDiffusion.i: main_AdvectionDiffusion.cpp.i
+
+.PHONY : main_AdvectionDiffusion.i
+
+# target to preprocess a source file
+main_AdvectionDiffusion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SolveLinearAlgebraicEquations.dir/build.make CMakeFiles/SolveLinearAlgebraicEquations.dir/main_AdvectionDiffusion.cpp.i
+.PHONY : main_AdvectionDiffusion.cpp.i
+
+main_AdvectionDiffusion.s: main_AdvectionDiffusion.cpp.s
+
+.PHONY : main_AdvectionDiffusion.s
+
+# target to generate assembly for a file
+main_AdvectionDiffusion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SolveLinearAlgebraicEquations.dir/build.make CMakeFiles/SolveLinearAlgebraicEquations.dir/main_AdvectionDiffusion.cpp.s
+.PHONY : main_AdvectionDiffusion.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -196,6 +223,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... main_AdvectionDiffusion.o"
+	@echo "... main_AdvectionDiffusion.i"
+	@echo "... main_AdvectionDiffusion.s"
 .PHONY : help
 
 

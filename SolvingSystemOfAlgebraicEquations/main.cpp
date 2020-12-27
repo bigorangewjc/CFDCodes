@@ -13,14 +13,14 @@ int main()
     std::cout << "\nInitial setup:" << std::endl;
     // Initialize matrix A and vector b
     int iRank = 4;
-    CMatrix &objMat = *(new CMatrix(iRank, iRank));
-    CVector &objVecB = *(new CVector(iRank));
-    CVector &objVecInit = *(new CVector(iRank));
-    CVector &objVecNewB = *(new CVector(iRank));
-    CVector &objVecXGau = *(new CVector(iRank));
-    CVector &objVecXLU = *(new CVector(iRank));
-    CVector &objVecXJac = *(new CVector(iRank));
-    CVector &objVecXGS = *(new CVector(iRank));
+    CMatrix objMat(iRank, iRank);
+    CVector objVecB(iRank);
+    CVector objVecInit(iRank);
+    CVector objVecNewB(iRank);
+    CVector objVecXGau(iRank);
+    CVector objVecXLU(iRank);
+    CVector objVecXJac(iRank);
+    CVector objVecXGS(iRank);
     objMat(0, 0) = 3;
     objMat(0, 1) = -1;
     objMat(0, 2) = 0;

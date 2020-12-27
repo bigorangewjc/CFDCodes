@@ -1,1 +1,1 @@
-/usr/bin/g++  -g  -rdynamic CMakeFiles/SolveLinearAlgebraicEquations.dir/main.cpp.o  -o ../bin/SolveLinearAlgebraicEquations  src/libLIB_SRCS.a 
+/usr/bin/g++  -g  -rdynamic CMakeFiles/SolveLinearAlgebraicEquations.dir/main.cpp.o CMakeFiles/SolveLinearAlgebraicEquations.dir/main_AdvectionDiffusion.cpp.o  -o ../bin/SolveLinearAlgebraicEquations  src/libLIB_SRCS.a 

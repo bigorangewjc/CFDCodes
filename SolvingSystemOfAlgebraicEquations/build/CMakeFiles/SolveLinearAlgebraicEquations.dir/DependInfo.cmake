@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/main.cpp" "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles/SolveLinearAlgebraicEquations.dir/main.cpp.o"
+  "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/main_AdvectionDiffusion.cpp" "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles/SolveLinearAlgebraicEquations.dir/main_AdvectionDiffusion.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
