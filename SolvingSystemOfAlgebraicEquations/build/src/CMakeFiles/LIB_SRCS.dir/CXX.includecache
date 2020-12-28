@@ -6,47 +6,11 @@
 
 #IncludeRegexTransform: 
 
-../include/Field.h
-string
--
+../include/FdMatrix.h
 
-../include/LoadConfig.h
-string
--
-vector
--
-map
--
-
-../include/Mesh.h
-string
--
-MeshI.h
-../include/MeshI.h
-
-../include/MeshI.h
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/FdMatrix.cpp
+FdMatrix.h
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/FdMatrix.h
 iostream
 -
-
-/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Field.cpp
-Field.h
-/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Field.h
-iostream
--
-math.h
--
-LoadConfig.h
-/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/LoadConfig.h
-Mesh.h
-/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Mesh.h
-
-/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Mesh.cpp
-Mesh.h
-/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Mesh.h
-iostream
--
-math.h
--
-LoadConfig.h
-/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/LoadConfig.h
 

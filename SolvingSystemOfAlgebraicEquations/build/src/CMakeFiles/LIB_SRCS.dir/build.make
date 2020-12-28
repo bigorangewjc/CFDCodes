@@ -77,9 +77,22 @@ include src/CMakeFiles/LIB_SRCS.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/LIB_SRCS.dir/flags.make
 
+src/CMakeFiles/LIB_SRCS.dir/FdMatrix.cpp.o: src/CMakeFiles/LIB_SRCS.dir/flags.make
+src/CMakeFiles/LIB_SRCS.dir/FdMatrix.cpp.o: ../src/FdMatrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/FdMatrix.cpp.o"
+	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LIB_SRCS.dir/FdMatrix.cpp.o -c /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/FdMatrix.cpp
+
+src/CMakeFiles/LIB_SRCS.dir/FdMatrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LIB_SRCS.dir/FdMatrix.cpp.i"
+	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/FdMatrix.cpp > CMakeFiles/LIB_SRCS.dir/FdMatrix.cpp.i
+
+src/CMakeFiles/LIB_SRCS.dir/FdMatrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LIB_SRCS.dir/FdMatrix.cpp.s"
+	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/FdMatrix.cpp -o CMakeFiles/LIB_SRCS.dir/FdMatrix.cpp.s
+
 src/CMakeFiles/LIB_SRCS.dir/Field.cpp.o: src/CMakeFiles/LIB_SRCS.dir/flags.make
 src/CMakeFiles/LIB_SRCS.dir/Field.cpp.o: ../src/Field.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/Field.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/Field.cpp.o"
 	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LIB_SRCS.dir/Field.cpp.o -c /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Field.cpp
 
 src/CMakeFiles/LIB_SRCS.dir/Field.cpp.i: cmake_force
@@ -92,7 +105,7 @@ src/CMakeFiles/LIB_SRCS.dir/Field.cpp.s: cmake_force
 
 src/CMakeFiles/LIB_SRCS.dir/GaussSeidelSolver.cpp.o: src/CMakeFiles/LIB_SRCS.dir/flags.make
 src/CMakeFiles/LIB_SRCS.dir/GaussSeidelSolver.cpp.o: ../src/GaussSeidelSolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/GaussSeidelSolver.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/GaussSeidelSolver.cpp.o"
 	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LIB_SRCS.dir/GaussSeidelSolver.cpp.o -c /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/GaussSeidelSolver.cpp
 
 src/CMakeFiles/LIB_SRCS.dir/GaussSeidelSolver.cpp.i: cmake_force
@@ -105,7 +118,7 @@ src/CMakeFiles/LIB_SRCS.dir/GaussSeidelSolver.cpp.s: cmake_force
 
 src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o: src/CMakeFiles/LIB_SRCS.dir/flags.make
 src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o: ../src/GaussSolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o"
 	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o -c /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/GaussSolver.cpp
 
 src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.i: cmake_force
@@ -118,7 +131,7 @@ src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.s: cmake_force
 
 src/CMakeFiles/LIB_SRCS.dir/JacobiSolver.cpp.o: src/CMakeFiles/LIB_SRCS.dir/flags.make
 src/CMakeFiles/LIB_SRCS.dir/JacobiSolver.cpp.o: ../src/JacobiSolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/JacobiSolver.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/JacobiSolver.cpp.o"
 	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LIB_SRCS.dir/JacobiSolver.cpp.o -c /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/JacobiSolver.cpp
 
 src/CMakeFiles/LIB_SRCS.dir/JacobiSolver.cpp.i: cmake_force
@@ -131,7 +144,7 @@ src/CMakeFiles/LIB_SRCS.dir/JacobiSolver.cpp.s: cmake_force
 
 src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o: src/CMakeFiles/LIB_SRCS.dir/flags.make
 src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o: ../src/LUSolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o"
 	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.o -c /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/LUSolver.cpp
 
 src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.i: cmake_force
@@ -144,7 +157,7 @@ src/CMakeFiles/LIB_SRCS.dir/LUSolver.cpp.s: cmake_force
 
 src/CMakeFiles/LIB_SRCS.dir/LoadConfig.cpp.o: src/CMakeFiles/LIB_SRCS.dir/flags.make
 src/CMakeFiles/LIB_SRCS.dir/LoadConfig.cpp.o: ../src/LoadConfig.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/LoadConfig.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/LoadConfig.cpp.o"
 	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LIB_SRCS.dir/LoadConfig.cpp.o -c /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/LoadConfig.cpp
 
 src/CMakeFiles/LIB_SRCS.dir/LoadConfig.cpp.i: cmake_force
@@ -157,7 +170,7 @@ src/CMakeFiles/LIB_SRCS.dir/LoadConfig.cpp.s: cmake_force
 
 src/CMakeFiles/LIB_SRCS.dir/Matrix.cpp.o: src/CMakeFiles/LIB_SRCS.dir/flags.make
 src/CMakeFiles/LIB_SRCS.dir/Matrix.cpp.o: ../src/Matrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/Matrix.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/Matrix.cpp.o"
 	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LIB_SRCS.dir/Matrix.cpp.o -c /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Matrix.cpp
 
 src/CMakeFiles/LIB_SRCS.dir/Matrix.cpp.i: cmake_force
@@ -170,7 +183,7 @@ src/CMakeFiles/LIB_SRCS.dir/Matrix.cpp.s: cmake_force
 
 src/CMakeFiles/LIB_SRCS.dir/Mesh.cpp.o: src/CMakeFiles/LIB_SRCS.dir/flags.make
 src/CMakeFiles/LIB_SRCS.dir/Mesh.cpp.o: ../src/Mesh.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/Mesh.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/Mesh.cpp.o"
 	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LIB_SRCS.dir/Mesh.cpp.o -c /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Mesh.cpp
 
 src/CMakeFiles/LIB_SRCS.dir/Mesh.cpp.i: cmake_force
@@ -183,7 +196,7 @@ src/CMakeFiles/LIB_SRCS.dir/Mesh.cpp.s: cmake_force
 
 src/CMakeFiles/LIB_SRCS.dir/Vector.cpp.o: src/CMakeFiles/LIB_SRCS.dir/flags.make
 src/CMakeFiles/LIB_SRCS.dir/Vector.cpp.o: ../src/Vector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/Vector.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/LIB_SRCS.dir/Vector.cpp.o"
 	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/LIB_SRCS.dir/Vector.cpp.o -c /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Vector.cpp
 
 src/CMakeFiles/LIB_SRCS.dir/Vector.cpp.i: cmake_force
@@ -196,6 +209,7 @@ src/CMakeFiles/LIB_SRCS.dir/Vector.cpp.s: cmake_force
 
 # Object files for target LIB_SRCS
 LIB_SRCS_OBJECTS = \
+"CMakeFiles/LIB_SRCS.dir/FdMatrix.cpp.o" \
 "CMakeFiles/LIB_SRCS.dir/Field.cpp.o" \
 "CMakeFiles/LIB_SRCS.dir/GaussSeidelSolver.cpp.o" \
 "CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o" \
@@ -209,6 +223,7 @@ LIB_SRCS_OBJECTS = \
 # External object files for target LIB_SRCS
 LIB_SRCS_EXTERNAL_OBJECTS =
 
+src/libLIB_SRCS.a: src/CMakeFiles/LIB_SRCS.dir/FdMatrix.cpp.o
 src/libLIB_SRCS.a: src/CMakeFiles/LIB_SRCS.dir/Field.cpp.o
 src/libLIB_SRCS.a: src/CMakeFiles/LIB_SRCS.dir/GaussSeidelSolver.cpp.o
 src/libLIB_SRCS.a: src/CMakeFiles/LIB_SRCS.dir/GaussSolver.cpp.o
@@ -220,7 +235,7 @@ src/libLIB_SRCS.a: src/CMakeFiles/LIB_SRCS.dir/Mesh.cpp.o
 src/libLIB_SRCS.a: src/CMakeFiles/LIB_SRCS.dir/Vector.cpp.o
 src/libLIB_SRCS.a: src/CMakeFiles/LIB_SRCS.dir/build.make
 src/libLIB_SRCS.a: src/CMakeFiles/LIB_SRCS.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX static library libLIB_SRCS.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library libLIB_SRCS.a"
 	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src && $(CMAKE_COMMAND) -P CMakeFiles/LIB_SRCS.dir/cmake_clean_target.cmake
 	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LIB_SRCS.dir/link.txt --verbose=$(VERBOSE)
 

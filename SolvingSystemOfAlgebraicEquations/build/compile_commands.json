@@ -11,6 +11,11 @@
 },
 {
   "directory": "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src",
+  "command": "/usr/bin/g++   -I/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/include  -g   -o CMakeFiles/LIB_SRCS.dir/FdMatrix.cpp.o -c /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/FdMatrix.cpp",
+  "file": "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/FdMatrix.cpp"
+},
+{
+  "directory": "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build/src",
   "command": "/usr/bin/g++   -I/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/include  -g   -o CMakeFiles/LIB_SRCS.dir/Field.cpp.o -c /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Field.cpp",
   "file": "/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Field.cpp"
 },

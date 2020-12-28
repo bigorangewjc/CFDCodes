@@ -145,6 +145,33 @@ LIB_SRCS/fast:
 	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LIB_SRCS.dir/build.make src/CMakeFiles/LIB_SRCS.dir/build
 .PHONY : LIB_SRCS/fast
 
+FdMatrix.o: FdMatrix.cpp.o
+
+.PHONY : FdMatrix.o
+
+# target to build an object file
+FdMatrix.cpp.o:
+	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LIB_SRCS.dir/build.make src/CMakeFiles/LIB_SRCS.dir/FdMatrix.cpp.o
+.PHONY : FdMatrix.cpp.o
+
+FdMatrix.i: FdMatrix.cpp.i
+
+.PHONY : FdMatrix.i
+
+# target to preprocess a source file
+FdMatrix.cpp.i:
+	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LIB_SRCS.dir/build.make src/CMakeFiles/LIB_SRCS.dir/FdMatrix.cpp.i
+.PHONY : FdMatrix.cpp.i
+
+FdMatrix.s: FdMatrix.cpp.s
+
+.PHONY : FdMatrix.s
+
+# target to generate assembly for a file
+FdMatrix.cpp.s:
+	cd /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/LIB_SRCS.dir/build.make src/CMakeFiles/LIB_SRCS.dir/FdMatrix.cpp.s
+.PHONY : FdMatrix.cpp.s
+
 Field.o: Field.cpp.o
 
 .PHONY : Field.o
@@ -397,6 +424,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... LIB_SRCS"
+	@echo "... FdMatrix.o"
+	@echo "... FdMatrix.i"
+	@echo "... FdMatrix.s"
 	@echo "... Field.o"
 	@echo "... Field.i"
 	@echo "... Field.s"
