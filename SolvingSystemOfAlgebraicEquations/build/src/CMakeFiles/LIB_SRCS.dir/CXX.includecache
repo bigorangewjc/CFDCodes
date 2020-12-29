@@ -8,9 +8,29 @@
 
 ../include/FdMatrix.h
 
+../include/Matrix.h
+MatrixI.h
+../include/MatrixI.h
+
+../include/MatrixI.h
+iostream
+-
+
+../include/Vector.h
+VectorI.h
+../include/VectorI.h
+
+../include/VectorI.h
+iostream
+-
+
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/FdMatrix.cpp
 FdMatrix.h
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/FdMatrix.h
 iostream
 -
+Matrix.h
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Matrix.h
+Vector.h
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Vector.h
 
