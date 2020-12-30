@@ -8,6 +8,7 @@ CField::CField(const CLoadConfig &objConfig, const CMesh &objMesh)
     : m_iNumPoints(objMesh.GetMeshSize())
     , m_pdField(nullptr)
     , m_sInitStrategy("")
+    , m_objVec(*(new CVector(objMesh.GetMeshSize())))
 {
     bool bRet = objConfig.GetParam(std::string("InitStrategy"), m_sInitStrategy);
     if (!bRet)
@@ -28,7 +29,7 @@ CField::CField(const CLoadConfig &objConfig, const CMesh &objMesh)
 
 CField::~CField()
 {
-    delete[] m_pdField;
+    delete &m_objVec;
 }
 
 bool CField::CreateInitialField(const CMesh &objMesh)
@@ -38,7 +39,7 @@ bool CField::CreateInitialField(const CMesh &objMesh)
     {
         for (int iI = 0; iI < m_iNumPoints; iI++)
         {
-            m_pdField[iI] = std::sin(objMesh(iI));
+            m_objVec(iI) = std::sin(objMesh(iI));
         }
     }
     else
@@ -52,13 +53,9 @@ bool CField::CreateInitialField(const CMesh &objMesh)
 
 void CField::PrintField()
 {
-    if (nullptr == m_pdField)
-    {
-        std::cout << "m_pdField is nullptr!" << std::endl;
-    }
     std::cout << "Field:" << std::endl;
-    for (int i = 0; i < m_iNumPoints; i++)
+    for (int iI = 0; iI < m_iNumPoints; iI++)
     {
-        std::cout << m_pdField[i] << std::endl;
+        std::cout << m_objVec(iI) << std::endl;
     }
 }

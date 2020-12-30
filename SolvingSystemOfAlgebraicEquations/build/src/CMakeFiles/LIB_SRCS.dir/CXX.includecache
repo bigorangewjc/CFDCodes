@@ -7,6 +7,22 @@
 #IncludeRegexTransform: 
 
 ../include/FdMatrix.h
+Matrix.h
+../include/Matrix.h
+Field.h
+../include/Field.h
+FdMatrixI.h
+../include/FdMatrixI.h
+
+../include/FdMatrixI.h
+
+../include/Field.h
+string
+-
+Vector.h
+../include/Vector.h
+Field.h
+../include/Field.h
 
 ../include/Matrix.h
 MatrixI.h
@@ -29,8 +45,6 @@ FdMatrix.h
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/FdMatrix.h
 iostream
 -
-Matrix.h
-/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Matrix.h
 Vector.h
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Vector.h
 

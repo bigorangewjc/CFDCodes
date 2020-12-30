@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+../include/Field.h
+string
+-
+Vector.h
+../include/Vector.h
+Field.h
+../include/Field.h
+
 ../include/GaussSeidelSolver.h
 ISolver.h
 ../include/ISolver.h
@@ -26,6 +34,14 @@ ISolver.h
 ISolver.h
 ../include/ISolver.h
 string
+-
+
+../include/LoadConfig.h
+string
+-
+vector
+-
+map
 -
 
 ../include/Matrix.h
@@ -63,4 +79,16 @@ Matrix.h
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/Matrix.h
 Vector.h
 /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/Vector.h
+
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/main_AdvectionDiffusion.cpp
+iostream
+-
+Field.h
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/Field.h
+LoadConfig.h
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/LoadConfig.h
+ThomasSolverFactory.h
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/ThomasSolverFactory.h
+ThomasSolver.h
+/home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/ThomasSolver.h
 

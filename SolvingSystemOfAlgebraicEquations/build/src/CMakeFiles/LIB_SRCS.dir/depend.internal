@@ -3,6 +3,8 @@
 
 src/CMakeFiles/LIB_SRCS.dir/FdMatrix.cpp.o
  ../include/FdMatrix.h
+ ../include/FdMatrixI.h
+ ../include/Field.h
  ../include/Matrix.h
  ../include/MatrixI.h
  ../include/Vector.h
@@ -13,6 +15,8 @@ src/CMakeFiles/LIB_SRCS.dir/Field.cpp.o
  ../include/LoadConfig.h
  ../include/Mesh.h
  ../include/MeshI.h
+ ../include/Vector.h
+ ../include/VectorI.h
  /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/src/Field.cpp
 src/CMakeFiles/LIB_SRCS.dir/GaussSeidelSolver.cpp.o
  ../include/GaussSeidelSolver.h

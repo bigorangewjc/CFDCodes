@@ -14,6 +14,7 @@ public:
   inline double& operator()(const int iRow, const int iCol);
   inline const double& operator()(const int iRow, const int iCol) const;
   inline CMatrix& operator+(const CMatrix& objMat);
+  inline CMatrix& operator+=(const CMatrix& objMat);
   void Print() const;
 
 private:

@@ -82,3 +82,27 @@ inline CMatrix &CMatrix::operator+(const CMatrix &objMat)
     }
     return *this;
 }
+
+inline CMatrix &CMatrix::operator+=(const CMatrix &objMat)
+{
+    if (m_iRows != objMat.GetNumRows())
+    {
+        std::cout << "ERROR: m_iRows = " << m_iRows << " is not equal to objMat.GetNumRows() = "
+                  << objMat.GetNumRows() << std::endl;
+        abort();
+    }
+    if (m_iCols != objMat.GetNumCols())
+    {
+        std::cout << "ERROR: m_iCols = " << m_iCols << " is not equal to objMat.GetNumCols() = "
+                  << objMat.GetNumCols() << std::endl;
+        abort();
+    }
+    for (int iI = 0; iI < m_iRows; iI++)
+    {
+        for (int iJ = 0; iJ < m_iCols; iJ++)
+        {
+            m_pdMat[iI][iJ] += objMat(iI, iJ);
+        }
+    }
+    return *this;
+}

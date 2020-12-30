@@ -15,4 +15,6 @@ CMakeFiles/SolveLinearAlgebraicEquations.dir/main.cpp.o
 CMakeFiles/SolveLinearAlgebraicEquations.dir/main_AdvectionDiffusion.cpp.o
  ../include/Field.h
  ../include/LoadConfig.h
+ ../include/Vector.h
+ ../include/VectorI.h
  /home/jcwang/work/Github/CFDCodes/SolvingSystemOfAlgebraicEquations/main_AdvectionDiffusion.cpp
